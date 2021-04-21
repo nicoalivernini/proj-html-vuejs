@@ -236,6 +236,9 @@ body {
 #jumbo .container .content-jumbo .card-jumbo {
   position: relative;
 }
+#jumbo .container .content-jumbo .card-jumbo img {
+  width: 100%;
+}
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo {
   position: absolute;
   top: 50%;
