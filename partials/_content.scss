@@ -1,0 +1,10 @@
+#courses {
+  .container {
+    .content-courses {
+      @include flex-center;
+      .card-courses {
+
+      }
+    }
+  }
+}

@@ -1,6 +1,9 @@
 #navbar {
+  width: 100%;
   height: 75px;
   background-color: black;
+  position: fixed;
+  z-index: 1;
   @include flex-center;
   .container {
     .content-navbar {
@@ -35,6 +38,33 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+#jumbo {
+  .container {
+    .content-jumbo {
+      .card-jumbo {
+        position: relative;
+        img {
+
+        }
+        .text-jumbo {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          h2 {
+
+          }
+          p {
+
+          }
+          button {
+
           }
         }
       }

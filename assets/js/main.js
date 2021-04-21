@@ -41,6 +41,48 @@ var app = new Vue ({
         name: 'bars'
       },
     ], //Chiusura iconNavbar
+    jumboSlide: [
+      {
+        img: 9,
+        title: 'Contemporary Ideas',
+        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+      },
+      {
+        img: 10,
+        title: 'Contemporary Ideas',
+        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+      }
+    ], //Chiusura jumboSlide
+    courses: [
+      {
+        //icon: ,
+        title: 'Languages'
+      },
+      {
+        //icon: ,
+        title: 'Software'
+      },
+      {
+        //icon: ,
+        title: 'Business'
+      },
+      {
+        //icon: ,
+        title: 'Chemistry'
+      },
+      {
+        //icon: ,
+        title: 'Science'
+      },
+      {
+        //icon: ,
+        title: 'DIY&Craft'
+      }
+    ], //Chiusura Courses
+
+
+
+
   }, //Chiusura Data
 
   methods: {
