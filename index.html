@@ -24,7 +24,7 @@
             <div class="content-menu-navbar">
               <ul>
                 <li v-for= 'menu in menuNavbar'>
-                  <a href="{{ name.link }}">{{ menu.name }}</a>
+                  <a :href=`${menu.link}`>{{ menu.name }}</a>
                 </li>
               </ul>
             </div>
@@ -33,7 +33,7 @@
             <div class="content-icon-navbar">
               <ul>
                 <li v-for="icon in iconNavbar">
-                  <a href="#"><i class="fas fa-">{{ icon.name }}</i></a>
+                  <a :href=`${icon.link}`><i :class="'fas fa-' + `${icon.name}`"></i></a>
                 </li>
               </ul>
             </div>
