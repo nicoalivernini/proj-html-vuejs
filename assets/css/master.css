@@ -39,3 +39,6 @@ body {
   justify-content: center;
   align-items: center;
 }
+#navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i {
+  color: white;
+}
