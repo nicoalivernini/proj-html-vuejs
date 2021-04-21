@@ -1,9 +1,14 @@
 #courses {
   .container {
     .content-courses {
-      @include flex-center;
+      @include flex-space-between-center;
       .card-courses {
-
+        background-color: #f7fdff;
+        @include flex-column-center;
+        padding: 20px;
+        img {
+          width: 50px;
+        }
       }
     }
   }

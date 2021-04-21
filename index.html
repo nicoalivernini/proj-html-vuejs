@@ -17,13 +17,13 @@
         <div class="content-navbar">
           <div class="logo-navbar">
             <div class="content-logo-navbar">
-              <img src="assets/img/logo-light.png" alt="">
+              <img src="assets/img/logo-light.png" alt="Logo iAcademy">
             </div>
           </div>
           <div class="menu-navbar">
             <div class="content-menu-navbar">
               <ul>
-                <li v-for= 'menu in menuNavbar'>
+                <li v-for= 'menu in menuNavbar' class="plr-15">
                   <a :href=`${menu.link}`>{{ menu.name }}</a>
                 </li>
               </ul>
@@ -32,7 +32,7 @@
           <div class="icon-navbar">
             <div class="content-icon-navbar">
               <ul>
-                <li v-for="icon in iconNavbar">
+                <li v-for="icon in iconNavbar" class="plr-10">
                   <a :href=`${icon.link}`><i :class="'fas fa-' + `${icon.name}`"></i></a>
                 </li>
               </ul>
@@ -56,7 +56,7 @@
       </div>
     </section>
     <section id="courses">
-      <div class="container">
+      <div class="container mtb-30">
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
             <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
