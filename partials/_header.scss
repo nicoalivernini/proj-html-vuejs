@@ -1,10 +1,10 @@
 #navbar {
   height: 75px;
   background-color: black;
-
+  @include flex-center;
   .container {
     .content-navbar {
-      @include flex-center;
+      @include flex-space-between-center;
       .logo-navbar {
         .content-logo-navbar{
           img {
@@ -27,7 +27,15 @@
       }
       .icon-navbar {
         .content-icon-navbar {
-
+          ul {
+            li {
+              a {
+                i {
+                  color: white;
+                }
+              }
+            }
+          }
         }
       }
     }

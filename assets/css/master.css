@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -17,10 +21,13 @@
 #navbar {
   height: 75px;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #navbar .container .content-navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 #navbar .container .content-navbar .logo-navbar .content-logo-navbar img {

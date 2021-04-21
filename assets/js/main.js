@@ -30,6 +30,17 @@ var app = new Vue ({
         //link:
       }
     ], //Chiusura menuNavbar
+    iconNavbar: [
+      {
+        name: 'search'
+      },
+      {
+        name: 'shopping-bag'
+      },
+      {
+        name: 'bars'
+      },
+    ], //Chiusura iconNavbar
   }, //Chiusura Data
 
   methods: {
