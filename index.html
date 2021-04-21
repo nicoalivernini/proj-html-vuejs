@@ -58,8 +58,8 @@
     <section id="courses">
       <div class="container">
         <div class="content-courses">
-          <div class="card-courses" v-for="course in courses">
-            <img src="" alt="">
+          <div class="card-courses" v-for="(course, i) in courses">
+            <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
             <h3>{{ course.title }}</h3>
           </div>
         </div>
