@@ -42,14 +42,22 @@ var app = new Vue({
       link: '#'
     }],
     //Chiusura iconNavbar
+    slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [{
-      img: 9,
+      img: 3,
       title: 'Contemporary Ideas',
-      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      button: 'Register now'
     }, {
-      img: 10,
+      img: 2,
       title: 'Contemporary Ideas',
-      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      button: 'Register now'
+    }, {
+      img: 1,
+      title: 'Contemporary Ideas',
+      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      button: 'Register now'
     }],
     //Chiusura jumboSlide
     coursesImgBase: 'assets/img/h5-custom-icon-',
@@ -75,10 +83,10 @@ var app = new Vue({
 
 /***/ }),
 
-/***/ "./src/css/master.scss":
-/*!*****************************!*\
-  !*** ./src/css/master.scss ***!
-  \*****************************/
+/***/ "./src/scss/master.scss":
+/*!******************************!*\
+  !*** ./src/scss/master.scss ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -223,7 +231,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["assets/css/master"], () => (__webpack_require__("./src/js/main.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/master"], () => (__webpack_require__("./src/css/master.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/master"], () => (__webpack_require__("./src/scss/master.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -5,10 +5,40 @@
       .card-courses {
         background-color: #f7fdff;
         @include flex-column-center;
-        padding: 20px;
+        padding: 30px 20px;
         img {
           width: 50px;
         }
+        h3 {
+          padding: 20px 0;
+          font-family: 'Merriweather', serif;
+        }
+      }
+    }
+  }
+}
+#tutoring {
+  .container {
+    .content-tutoring {
+      .text-tutoring {
+        h4 {
+          font-family: 'Merriweather', serif;
+          font-size: 60px;
+          color: #303030;
+          font-weight: 500;
+        }
+        p {
+          font-size: 23px;
+          color: #595959;
+          &.more {
+            text-transform: uppercase;
+            color: $celeste-button;
+            font-weight: 600;
+          }
+        }
+      }
+      .img-tutoring {
+
       }
     }
   }

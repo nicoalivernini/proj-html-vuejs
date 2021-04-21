@@ -44,16 +44,25 @@ var app = new Vue ({
         link: '#'
       },
     ], //Chiusura iconNavbar
+    slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [
       {
-        img: 9,
+        img: 3,
         title: 'Contemporary Ideas',
-        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+        button: 'Register now'
       },
       {
-        img: 10,
+        img: 2,
         title: 'Contemporary Ideas',
-        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.'
+        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+        button: 'Register now'
+      },
+      {
+        img: 1,
+        title: 'Contemporary Ideas',
+        text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+        button: 'Register now'
       }
     ], //Chiusura jumboSlide
     coursesImgBase: 'assets/img/h5-custom-icon-',

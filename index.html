@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>iCademy</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/master.css">
@@ -44,23 +45,40 @@
     <section id="jumbo">
       <div class="container fluid">
         <div class="content-jumbo">
-          <div class="card-jumbo">
-            <img src="assets/img/course-9-f-img.jpg" alt="">
-            <div class="text-jumbo">
-              <h2>Title</h2>
-              <p>TEXT</p>
-              <button>Register</button>
+          <!-- <div class="card-jumbo" v-for="slide in jumboSlide">
+            <img :src="slideImgBase + `${slide.img}` + '-background.jpg'" alt="">
+            <div class="text-jumbo txt-center">
+              <h2>{{ slide.title }}</h2>
+              <p>{{ slide.text }}</p>
+              <button>{{ slide.button }}</button>
             </div>
-          </div>
+          </div> -->
+          <img src="assets/img/h5-slide-3-background.jpg" alt="">
         </div>
       </div>
     </section>
     <section id="courses">
-      <div class="container mtb-30">
+      <div class="container mt-30">
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
             <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
             <h3>{{ course.title }}</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tutoring">
+      <div class="container mtb-70">
+        <div class="content-tutoring">
+          <div class="text-tutoring">
+            <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
+            <p class="ptb-25">Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin,
+               lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
+               odio sit amet nibcursus a sit amet mauris.</p>
+            <p class="more">Learn more</p>
+          </div>
+          <div class="img-tutoring">
+            <img src="assets/img/h5-img-1.jpg" alt="">
           </div>
         </div>
       </div>
