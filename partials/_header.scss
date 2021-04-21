@@ -1,0 +1,30 @@
+#navbar {
+  height: 75px;
+  border: 1px solid black;
+  .container {
+    .content-navbar {
+      .logo-navbar {
+        .content-logo-navbar{
+
+        }
+      }
+      .menu-navbar {
+        .content-menu-navbar {
+          ul {
+            list-style: none;
+            li {
+              a {
+
+              }
+            }
+          }
+        }
+      }
+      .icon-navbar {
+        .content-icon-navbar {
+
+        }
+      }
+    }
+  }
+}
