@@ -22,14 +22,10 @@
     .content-tutoring {
       .text-tutoring {
         h4 {
-          font-family: 'Merriweather', serif;
-          font-size: 60px;
-          color: #303030;
-          font-weight: 500;
+
         }
         p {
-          font-size: 23px;
-          color: #595959;
+
           &.more {
             text-transform: uppercase;
             color: $celeste-button;
@@ -57,14 +53,10 @@
       .text-world {
         width: 45%;
         h4 {
-          font-family: 'Merriweather', serif;
-          font-size: 60px;
-          color: #303030;
-          font-weight: 500;
+
         }
         p {
-          font-size: 23px;
-          color: #595959;
+
         }
         .data-world {
           @include flex-start-center;
@@ -160,12 +152,10 @@
         width: 70%;
         .content-description {
           h4 {
-            font-family: 'Merriweather', serif;
-            font-size: 50px;
+
           }
           p {
-            font-size: 23px;
-            color: $text-gray;
+
           }
         }
         .benefit-course {
@@ -197,15 +187,10 @@
       .title-online-courses {
         .text-title {
           h4 {
-            font-family: 'Merriweather', serif;
-            font-size: 50px;
-            color: $title-gray;
+
           }
           p {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 23px;
-            color: $text-gray;
+
           }
         }
       }
@@ -232,6 +217,7 @@
                     font-size: 18px;
                   }
                   p {
+                    font-weight: 600;
                     color: #b9b9b9;
                   }
                 }
@@ -275,6 +261,30 @@
           i {
             color: $celeste-button;
           }
+        }
+      }
+    }
+  }
+}
+#pricing {
+  .container {
+    &.background {
+      background-image: url('../img/background-pattern.jpg');
+      background-repeat: no-repeat;
+      background-size: inherit;
+    }
+    .content-pricing {
+      .text-pricing {
+        h4 {
+
+        }
+        p {
+
+        }
+      }
+      .table-pricing {
+        .content-table-pricing {
+          
         }
       }
     }

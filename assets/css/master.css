@@ -22,6 +22,21 @@ body {
   text-align: center;
 }
 
+.subtitle {
+  margin: 0 auto;
+  font-size: 23px;
+  color: #595959;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+  color: #303030;
+  font-weight: 500;
+}
+
 .pad-10 {
   padding: 10px;
 }
@@ -328,16 +343,6 @@ body {
   font-family: "Merriweather", serif;
 }
 
-#tutoring .container .content-tutoring .text-tutoring h4 {
-  font-family: "Merriweather", serif;
-  font-size: 60px;
-  color: #303030;
-  font-weight: 500;
-}
-#tutoring .container .content-tutoring .text-tutoring p {
-  font-size: 23px;
-  color: #595959;
-}
 #tutoring .container .content-tutoring .text-tutoring p.more {
   text-transform: uppercase;
   color: #40c4ff;
@@ -359,16 +364,6 @@ body {
 }
 #world .container .content-world .text-world {
   width: 45%;
-}
-#world .container .content-world .text-world h4 {
-  font-family: "Merriweather", serif;
-  font-size: 60px;
-  color: #303030;
-  font-weight: 500;
-}
-#world .container .content-world .text-world p {
-  font-size: 23px;
-  color: #595959;
 }
 #world .container .content-world .text-world .data-world {
   display: flex;
@@ -454,14 +449,6 @@ body {
 #possibilities .container .content-possibilities .description-course {
   width: 70%;
 }
-#possibilities .container .content-possibilities .description-course .content-description h4 {
-  font-family: "Merriweather", serif;
-  font-size: 50px;
-}
-#possibilities .container .content-possibilities .description-course .content-description p {
-  font-size: 23px;
-  color: #595959;
-}
 #possibilities .container .content-possibilities .description-course .benefit-course {
   display: flex;
   justify-content: space-between;
@@ -488,17 +475,6 @@ body {
   background-image: url("../img/background-pattern.jpg");
   background-repeat: no-repeat;
   background-size: inherit;
-}
-#online-courses .container .content-online-courses .title-online-courses .text-title h4 {
-  font-family: "Merriweather", serif;
-  font-size: 50px;
-  color: #303030;
-}
-#online-courses .container .content-online-courses .title-online-courses .text-title p {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 23px;
-  color: #595959;
 }
 #online-courses .container .content-online-courses .content-card-online-courses {
   display: flex;
@@ -529,6 +505,7 @@ body {
   font-size: 18px;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .title-text p {
+  font-weight: 600;
   color: #b9b9b9;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .price-text span {
@@ -567,4 +544,10 @@ body {
 }
 #online-courses .container .content-online-courses .icon-card .content-icon-card i {
   color: #40c4ff;
+}
+
+#pricing .container.background {
+  background-image: url("../img/background-pattern.jpg");
+  background-repeat: no-repeat;
+  background-size: inherit;
 }

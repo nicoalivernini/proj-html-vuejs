@@ -11,6 +11,22 @@
   text-align: center;
 }
 
+.subtitle {
+  // width: 80%;
+  margin: 0 auto;
+  font-size: 23px;
+  color: $text-gray;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+  color: $title-gray;
+  font-weight: 500;
+}
+
 //Padding
 
 .pad-10{
