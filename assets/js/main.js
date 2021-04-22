@@ -140,25 +140,41 @@ var app = new Vue({
       courses: ' Number of Courses',
       time: 'Time',
       web: 'Web Designing',
-      human: 'Human-Centered Design'
+      human: 'Human-Centered Design',
+      marketing: 'Basic Marketing',
+      python: 'Python for Everybody',
+      android: 'Android Developer',
+      english: 'Business English'
     }, {
       title: 'Standard',
       courses: '2',
       time: '15 Days',
       web: '<i class="fas fa-check"></i>',
-      human: '<i class="fas fa-check"></i>'
+      human: '<i class="fas fa-check"></i>',
+      marketing: '<i class="fas fa-times"></i>',
+      python: '<i class="fas fa-times"></i>',
+      android: '<i class="fas fa-times"></i>',
+      english: '<i class="fas fa-times"></i>'
     }, {
       title: 'Professional',
       courses: '4',
       time: '30 Days',
       web: '<i class="fas fa-check"></i>',
-      human: '<i class="fas fa-check"></i>'
+      human: '<i class="fas fa-check"></i>',
+      marketing: '<i class="fas fa-check"></i>',
+      python: '<i class="fas fa-check"></i>',
+      android: '<i class="fas fa-times"></i>',
+      english: '<i class="fas fa-times"></i>'
     }, {
       title: 'Advanced',
       courses: '6',
       time: '30 Days',
       web: '<i class="fas fa-check"></i>',
-      human: '<i class="fas fa-check"></i>'
+      human: '<i class="fas fa-check"></i>',
+      marketing: '<i class="fas fa-check"></i>',
+      python: '<i class="fas fa-check"></i>',
+      android: '<i class="fas fa-check"></i>',
+      english: '<i class="fas fa-check"></i>'
     }] //Chiusura Date Table
 
   },

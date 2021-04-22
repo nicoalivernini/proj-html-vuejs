@@ -213,21 +213,40 @@
           <div class="table-pricing">
             <div class="content-table-pricing">
               <table>
-                <tr>
-                  <th v-for="date in dateTable">{{ date.title }}</th>
-                </tr>
-                <tr>
-                  <td v-for="date in dateTable">{{ date.courses }}</td>
-                </tr>
-                <tr>
-                  <td v-for="date in dateTable">{{ date.time }}</td>
-                </tr>
-                <tr>
-                  <td v-for="date in dateTable" v-html="date.web"></td>
-                </tr>
-                <tr>
-                  <td v-for="date in dateTable" v-html="date.human"></td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th v-for="date in dateTable">{{ date.title }}</th>
+                  </tr>
+                  <tr>
+                    <th v-for="date in dateTable">{{ date.title }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td v-for="date in dateTable">{{ date.courses }}</td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable">{{ date.time }}</td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.web"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.human"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.marketing"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.python"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.android"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" v-html="date.english"></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

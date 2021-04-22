@@ -169,6 +169,10 @@ var app = new Vue ({
         time: 'Time',
         web: 'Web Designing',
         human: 'Human-Centered Design',
+        marketing: 'Basic Marketing',
+        python: 'Python for Everybody',
+        android: 'Android Developer',
+        english: 'Business English'
       },
       {
         title: 'Standard',
@@ -176,6 +180,10 @@ var app = new Vue ({
         time: '15 Days',
         web: '<i class="fas fa-check"></i>',
         human: '<i class="fas fa-check"></i>',
+        marketing: '<i class="fas fa-times"></i>',
+        python: '<i class="fas fa-times"></i>',
+        android: '<i class="fas fa-times"></i>',
+        english: '<i class="fas fa-times"></i>'
       },
       {
         title: 'Professional',
@@ -183,6 +191,10 @@ var app = new Vue ({
         time: '30 Days',
         web: '<i class="fas fa-check"></i>',
         human: '<i class="fas fa-check"></i>',
+        marketing: '<i class="fas fa-check"></i>',
+        python: '<i class="fas fa-check"></i>',
+        android: '<i class="fas fa-times"></i>',
+        english: '<i class="fas fa-times"></i>'
       },
       {
         title: 'Advanced',
@@ -190,6 +202,10 @@ var app = new Vue ({
         time: '30 Days',
         web: '<i class="fas fa-check"></i>',
         human: '<i class="fas fa-check"></i>',
+        marketing: '<i class="fas fa-check"></i>',
+        python: '<i class="fas fa-check"></i>',
+        android: '<i class="fas fa-check"></i>',
+        english: '<i class="fas fa-check"></i>'
       },
     ], //Chiusura Date Table
 

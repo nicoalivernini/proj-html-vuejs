@@ -286,6 +286,32 @@
         .content-table-pricing {
           table {
             margin: 0 auto;
+            thead {
+              tr {
+                th {
+                  font-family: 'Merriweather',serif;
+                  font-size: 16px;
+                  padding: 10px 10px 10px 30px;
+                }
+              }
+            }
+            tbody {
+              tr {
+                td {
+                  border: 1px solid black;
+                  font-weight: 400;
+                  font-size: 20px;
+                  color: grey;
+                  font-weight: 700;
+                  text-align: center;
+                  &:first-child {
+                    font-family: 'Merriweather',serif;
+                    padding: 10px 10px 10px 30px;
+                    text-align: left;
+                  }
+                }
+              }
+            }
           }
         }
       }
