@@ -133,16 +133,32 @@
 #possibilities {
   .container {
     .content-possibilities {
-      .content-course {
-        ul {
-          li {
-
+      @include flex-center;
+      .course-possibilities {
+        width: 30%;
+        .content-course {
+          ul {
+            list-style: none;
+            li {
+              padding: 20px 10px 20px 20px;
+              border: 1px solid $border-course-possibilities;
+              font-family: 'Merriweather', serif;
+              color: $text-course-possibilities;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 30px;
+              &:first-child {
+                border-left: 7px solid $celeste-button;
+                background-color: #fcfcfc;
+                color: $celeste-button;
+              }
+            }
           }
         }
-      }
-      .description-course {
-        .content-description {
-          
+        .description-course {
+          .content-description {
+
+          }
         }
       }
     }

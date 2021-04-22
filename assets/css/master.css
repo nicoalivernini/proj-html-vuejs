@@ -181,6 +181,10 @@ body {
   margin-left: 15px;
 }
 
+.ml-70 {
+  margin-left: 70px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -401,4 +405,30 @@ body {
 #review .container .content-review .card-review .icon-card {
   color: #ffffff;
   padding: 40px 0;
+}
+
+#possibilities .container .content-possibilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#possibilities .container .content-possibilities .course-possibilities {
+  width: 30%;
+}
+#possibilities .container .content-possibilities .course-possibilities .content-course ul {
+  list-style: none;
+}
+#possibilities .container .content-possibilities .course-possibilities .content-course ul li {
+  padding: 20px 10px 20px 20px;
+  border: 1px solid #e5e5e5;
+  font-family: "Merriweather", serif;
+  color: #847b7b;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#possibilities .container .content-possibilities .course-possibilities .content-course ul li:first-child {
+  border-left: 7px solid #40c4ff;
+  background-color: #fcfcfc;
+  color: #40c4ff;
 }
