@@ -53,7 +53,9 @@
               <button>{{ slide.button }}</button>
             </div>
           </div> -->
-          <img src="assets/img/h5-slide-3-background.jpg" alt="">
+          <div class="card-jumbo">
+            <img src="assets/img/h5-slide-3-background.jpg" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -68,7 +70,7 @@
       </div>
     </section>
     <section id="tutoring">
-      <div class="container mtb-70">
+      <div class="container mt-70">
         <div class="content-tutoring">
           <div class="text-tutoring">
             <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
@@ -81,6 +83,69 @@
             <img src="assets/img/h5-img-1.jpg" alt="">
           </div>
         </div>
+      </div>
+    </section>
+    <section id="world">
+      <div class="container mt-120">
+        <div class="content-world">
+          <div class="img-world">
+            <img src="assets/img/h5-img-2.jpg" alt="Immagine ragazzi con le mani sul mondo">
+          </div>
+          <div class="text-world">
+            <h4>Empowering Children to Reach Their Potential</h4>
+            <p class="ptb-25">Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin,
+               lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
+               odio sit amet nibcursus a sit amet mauris.</p>
+            <div class="data-world">
+              <div class="data-content-world mr-100" v-for="data in dataWorld">
+                <p>{{ data.number }}</p>
+                <p>{{ data.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <div class="container fluid background">
+        <div class="content-review">
+          <div class="card-review ptb-150">
+            <div class="img-card">
+              <img src="assets/img/testimonials-standard-2.png" alt="">
+            </div>
+            <div class="text-card txt-center">
+              <p class="ptb-30">"Mroin gravida nibh vel veliauctor aliquenean aollicitudin,
+                lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh
+                id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris.
+                Morbi accumsan ipsum velit. Nam nec tellus."
+              </p>
+              <h5 class="ptb-10">Joan Collins</h5>
+              <p>Student</p>
+            </div>
+            <div class="icon-card">
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="possibilities">
+      <div class="container mt-120">
+        <div class="content-possibilities">
+          <div class="course-possibilities">
+            <div class="content-course">
+              <ul>
+                <li v-for="possibilitie in possibilities"> {{ possibilitie.intro }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="description-course">
+            <div class="content-description">
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </div> <!-- Chiusura oggetto Vue -->

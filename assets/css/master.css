@@ -59,6 +59,11 @@ body {
   padding-bottom: 30px;
 }
 
+.ptb-150 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .plr-10 {
   padding-left: 10px;
   padding-right: 10px;
@@ -164,6 +169,10 @@ body {
   margin-right: 10px;
 }
 
+.mr-100 {
+  margin-right: 100px;
+}
+
 .ml-10 {
   margin-left: 10px;
 }
@@ -174,6 +183,22 @@ body {
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-120 {
+  margin-top: 120px;
 }
 
 .mtb-30 {
@@ -269,6 +294,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
   padding: 30px 20px;
 }
 #courses .container .content-courses .card-courses img {
@@ -293,4 +319,86 @@ body {
   text-transform: uppercase;
   color: #40c4ff;
   font-weight: 600;
+}
+#world .container .content-world {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#world .container .content-world .img-world {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#world .container .content-world .img-world img {
+  width: 100%;
+}
+#world .container .content-world .text-world {
+  width: 45%;
+}
+#world .container .content-world .text-world h4 {
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  color: #303030;
+  font-weight: 500;
+}
+#world .container .content-world .text-world p {
+  font-size: 23px;
+  color: #595959;
+}
+#world .container .content-world .text-world .data-world {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#world .container .content-world .text-world .data-world .data-content-world p {
+  color: #40c4ff;
+  font-family: "Merriweather", serif;
+}
+#world .container .content-world .text-world .data-world .data-content-world p:first-child {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+#review .container {
+  margin-top: 50px;
+}
+#review .container.background {
+  background-image: url("../img/h5-parallax-img-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#review .container .content-review {
+  padding: 0 10%;
+}
+#review .container .content-review .card-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+#review .container .content-review .card-review .text-card {
+  color: #ffffff;
+}
+#review .container .content-review .card-review .text-card p {
+  line-height: 35px;
+  font-size: 22px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+#review .container .content-review .card-review .text-card p:last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+#review .container .content-review .card-review .text-card h5 {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#review .container .content-review .card-review .icon-card {
+  color: #ffffff;
+  padding: 40px 0;
 }

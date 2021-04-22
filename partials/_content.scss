@@ -4,7 +4,7 @@
       @include flex-space-between-center;
       .card-courses {
         background-color: #f7fdff;
-        @include flex-column-center;
+        @include flex-column-center-center;
         padding: 30px 20px;
         img {
           width: 50px;
@@ -39,6 +39,111 @@
       }
       .img-tutoring {
 
+      }
+    }
+  }
+}
+#world {
+  .container {
+    .content-world {
+      @include flex-space-between-center;
+      .img-world {
+        width: 50%;
+        @include flex-center-end;
+        img {
+          width: 100%;
+        }
+      }
+      .text-world {
+        width: 45%;
+        h4 {
+          font-family: 'Merriweather', serif;
+          font-size: 60px;
+          color: #303030;
+          font-weight: 500;
+        }
+        p {
+          font-size: 23px;
+          color: #595959;
+        }
+        .data-world {
+          @include flex-start-center;
+          .data-content-world{
+            p {
+              color: $celeste-button;
+              font-family: 'Merriweather', serif;
+
+              &:first-child {
+                font-size: 70px;
+                font-weight: 600;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#review {
+  .container {
+    margin-top: 50px;
+    &.background {
+      background-image: url('../img/h5-parallax-img-1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content-review {
+      padding: 0 10%;
+      .card-review {
+        @include flex-column-center-center;
+        .img-card {
+          img {
+
+          }
+        }
+        .text-card {
+          color: $white;
+          p {
+            line-height: 35px;
+            font-size: 22px;
+            width: 80%;
+            margin: 0 auto;
+            font-weight: 300;
+            &:last-child {
+              text-transform: uppercase;
+              font-weight: 600;
+              font-size: 15px;
+            }
+          }
+          h5 {
+            font-family: 'Merriweather', serif;
+            font-size: 25px;
+            font-weight: 500;
+          }
+        }
+        .icon-card {
+          color: $white;
+          padding: 40px 0;
+        }
+      }
+    }
+  }
+}
+#possibilities {
+  .container {
+    .content-possibilities {
+      .content-course {
+        ul {
+          li {
+
+          }
+        }
+      }
+      .description-course {
+        .content-description {
+          
+        }
       }
     }
   }

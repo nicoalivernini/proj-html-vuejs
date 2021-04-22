@@ -46,17 +46,17 @@ var app = new Vue({
     jumboSlide: [{
       img: 3,
       title: 'Contemporary Ideas',
-      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
       button: 'Register now'
     }, {
       img: 2,
       title: 'Contemporary Ideas',
-      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
       button: 'Register now'
     }, {
       img: 1,
       title: 'Contemporary Ideas',
-      text: 'Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
+      text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
       button: 'Register now'
     }],
     //Chiusura jumboSlide
@@ -73,8 +73,31 @@ var app = new Vue({
       title: 'Science'
     }, {
       title: 'DIY&Craft'
-    }] //Chiusura Courses
-
+    }],
+    //Chiusura Courses
+    dataWorld: [{
+      number: '168',
+      text: 'User Stories'
+    }, {
+      number: '347',
+      text: 'Events'
+    }],
+    //Chiusura dataWorld
+    possibilities: [{
+      intro: 'What We Do',
+      title: 'Learning Possibilities',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.'
+    }, {
+      intro: 'Degree Programme'
+    }, {
+      intro: 'Career Achievements'
+    }, {
+      intro: 'Personal Managment'
+    }, {
+      intro: 'Steps To Success'
+    }, {
+      intro: 'Knowledge Transfer'
+    }]
   },
   //Chiusura Data
   methods: {} //Chiusura Methods
