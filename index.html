@@ -142,11 +142,55 @@
           <div class="description-course ml-70">
             <div class="content-description">
               <h4>{{ possibilities[0].title }}</h4>
-              <p>{{ possibilities[0].description }}</p>
+              <p class="ptb-25">{{ possibilities[0].description }}</p>
+            </div>
+            <div class="benefit-course">
+              <ul>
+                <li v-for="(benefit, i) in possibilities">{{ possibilities[0].benefit[0].title }}</li>
+              </ul>
+              <div class="img-benefit">
+                <img src="assets/img/h12-tabs-icon-1.png" alt="">
+              </div>
             </div>
           </div>
         </div>
 
+      </div>
+    </section>
+    <section id="online-courses">
+      <div class="container mt-120 background">
+        <div class="content-online-courses">
+          <div class="title-online-courses txt-center">
+            <div class="text-title">
+              <h4>Popular Online Courses</h4>
+              <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean
+                sollicitudin, lorem quis bibendum auci elit consequat ipsutis
+                sem nibh id elit
+              </p>
+            </div>
+          </div>
+          <div class="card-online-courses" v-for="course in onlineCourses">
+            <div class="content-card-online">
+              <div class="img-card">
+                <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="">
+              </div>
+              <div class="text-card">
+                <div class="title-text">
+                  <h6>{{ course.title }}</h6>
+                  <span>{{ course.price }}</span>
+                  <p>{{ course.author }}</p>
+                </div>
+                <div class="description-text">
+                  <p>{{ course.description }}</p>
+                </div>
+                <div class="tag-text">
+                  <span>{{ course.people }}</span>
+                  <span>{{ course.tag }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div> <!-- Chiusura oggetto Vue -->

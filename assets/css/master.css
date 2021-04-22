@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -410,10 +411,10 @@ body {
 #possibilities .container .content-possibilities {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 #possibilities .container .content-possibilities .course-possibilities {
-  width: 30%;
+  width: 20%;
 }
 #possibilities .container .content-possibilities .course-possibilities .content-course ul {
   list-style: none;
@@ -431,4 +432,42 @@ body {
   border-left: 7px solid #40c4ff;
   background-color: #fcfcfc;
   color: #40c4ff;
+}
+#possibilities .container .content-possibilities .description-course {
+  width: 70%;
+}
+#possibilities .container .content-possibilities .description-course .content-description h4 {
+  font-family: "Merriweather", serif;
+  font-size: 50px;
+}
+#possibilities .container .content-possibilities .description-course .content-description p {
+  font-size: 23px;
+  color: #595959;
+}
+#possibilities .container .content-possibilities .description-course .benefit-course {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#possibilities .container .content-possibilities .description-course .benefit-course ul {
+  list-style: none;
+}
+#possibilities .container .content-possibilities .description-course .benefit-course ul li {
+  font-size: 23px;
+  color: #595959;
+  padding: 10px 0;
+}
+#possibilities .container .content-possibilities .description-course .benefit-course ul li:before {
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #40c4ff;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+#online-courses .container.background {
+  background-image: url("../img/background-pattern.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -133,9 +133,9 @@
 #possibilities {
   .container {
     .content-possibilities {
-      @include flex-center;
+      @include flex-center-flex-start;
       .course-possibilities {
-        width: 30%;
+        width: 20%;
         .content-course {
           ul {
             list-style: none;
@@ -155,12 +155,43 @@
             }
           }
         }
-        .description-course {
-          .content-description {
-
+      }
+      .description-course {
+        width: 70%;
+        .content-description {
+          h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 50px;
+          }
+          p {
+            font-size: 23px;
+            color: #595959;
+          }
+        }
+        .benefit-course {
+          @include flex-space-between-flex-end;
+          ul {
+            list-style: none;
+            li {
+              font-size: 23px;
+              color: #595959;
+              padding: 10px 0;
+              &:before{
+                @include done;
+              }
+            }
           }
         }
       }
+    }
+  }
+}
+#online-courses {
+  .container {
+    &.background {
+      background-image: url('../img/background-pattern.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
