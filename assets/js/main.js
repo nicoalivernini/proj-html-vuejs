@@ -30,7 +30,7 @@ var app = new Vue({
       name: 'Elements',
       link: '#'
     }],
-    //Chiusura menuNavbar
+    //Chiusura Menu Navbar
     iconNavbar: [{
       name: 'search',
       link: '#'
@@ -41,7 +41,7 @@ var app = new Vue({
       name: 'bars',
       link: '#'
     }],
-    //Chiusura iconNavbar
+    //Chiusura Icon Navbar
     slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [{
       img: '3',
@@ -59,7 +59,7 @@ var app = new Vue({
       text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
       button: 'Register now'
     }],
-    //Chiusura jumboSlide
+    //Chiusura Jumbo Slide
     coursesImgBase: 'assets/img/h5-custom-icon-',
     courses: [{
       title: 'Languages'
@@ -82,7 +82,7 @@ var app = new Vue({
       number: '347',
       text: 'Events'
     }],
-    //Chiusura dataWorld
+    //Chiusura Data World
     possibilities: [{
       intro: 'What We Do',
       title: 'Learning Possibilities',
@@ -133,7 +133,8 @@ var app = new Vue({
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
       tag: 'Business'
-    }]
+    }] //Chiusura Online Courses
+
   },
   //Chiusura Data
   methods: {// getBenefit: function (possibilities) {

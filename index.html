@@ -163,29 +163,35 @@
           <div class="title-online-courses txt-center">
             <div class="text-title">
               <h4>Popular Online Courses</h4>
-              <p>Lorem ipsum gravida nibh vel velit auctor aliquetnean
+              <p class="ptb-25">Lorem ipsum gravida nibh vel velit auctor aliquetnean
                 sollicitudin, lorem quis bibendum auci elit consequat ipsutis
                 sem nibh id elit
               </p>
             </div>
           </div>
-          <div class="card-online-courses" v-for="course in onlineCourses">
-            <div class="content-card-online">
-              <div class="img-card">
-                <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="">
-              </div>
-              <div class="text-card">
-                <div class="title-text">
-                  <h6>{{ course.title }}</h6>
-                  <span>{{ course.price }}</span>
-                  <p>{{ course.author }}</p>
+          <div class="content-card-online-courses mt-70">
+            <div class="card-online-courses" v-for="course in onlineCourses">
+              <div class="content-card-online">
+                <div class="img-card">
+                  <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="">
                 </div>
-                <div class="description-text">
-                  <p>{{ course.description }}</p>
-                </div>
-                <div class="tag-text">
-                  <span>{{ course.people }}</span>
-                  <span>{{ course.tag }}</span>
+                <div class="text-card">
+                  <div class="header-text">
+                    <div class="title-text">
+                      <h6>{{ course.title }}</h6>
+                      <p class="ptb-10">{{ course.author }}</p>
+                    </div>
+                    <div class="price-text">
+                      <span>{{ course.price }}</span>
+                    </div>
+                  </div>
+                  <div class="description-text mt-15">
+                    <p>{{ course.description }}</p>
+                  </div>
+                  <div class="tag-text ptb-15">
+                    <span>{{ course.people }}</span>
+                    <span>{{ course.tag }}</span>
+                  </div>
                 </div>
               </div>
             </div>

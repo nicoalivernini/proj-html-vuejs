@@ -49,3 +49,22 @@
   vertical-align: middle;
   padding-right: 10px;
 }
+
+@mixin user {
+  content: '\f007';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $icon-color-courses;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+@mixin tag {
+  content: '\f02b';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $icon-color-courses;
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 10px;
+}
