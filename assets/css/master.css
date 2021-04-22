@@ -572,3 +572,6 @@ h4 {
   padding: 10px 10px 10px 30px;
   text-align: left;
 }
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
+  color: #40c4ff;
+}

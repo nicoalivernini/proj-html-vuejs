@@ -309,6 +309,11 @@
                     padding: 10px 10px 10px 30px;
                     text-align: left;
                   }
+                  i {
+                    &.fa-check {
+                      color: $celeste-button;
+                    }
+                  }
                 }
               }
             }
