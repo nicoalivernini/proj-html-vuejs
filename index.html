@@ -214,25 +214,19 @@
             <div class="content-table-pricing">
               <table>
                 <tr>
-                  <th>Save</th>
-                  <th>Standard</th>
-                  <th>Professional</th>
-                  <th>Advanced</th>
+                  <th v-for="date in dateTable">{{ date.title }}</th>
                 </tr>
                 <tr>
-                  <td>Number of Courses</td>
-                  <td>2</td>
-                  <td>4</td>
-                  <td>6</td>
+                  <td v-for="date in dateTable">{{ date.courses }}</td>
                 </tr>
                 <tr>
-                  <td>Time</td>
-                  <td>15 Days</td>
-                  <td>30 Days</td>
+                  <td v-for="date in dateTable">{{ date.time }}</td>
                 </tr>
                 <tr>
-                  <td>Web Designing</td>
-                  <td>flag</td>
+                  <td v-for="date in dateTable" v-html="date.web"></td>
+                </tr>
+                <tr>
+                  <td v-for="date in dateTable" v-html="date.human"></td>
                 </tr>
               </table>
             </div>

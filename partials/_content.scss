@@ -284,7 +284,9 @@
       }
       .table-pricing {
         .content-table-pricing {
-          
+          table {
+            margin: 0 auto;
+          }
         }
       }
     }

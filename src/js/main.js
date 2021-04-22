@@ -162,7 +162,36 @@ var app = new Vue ({
         tag: 'Business'
       }
     ], //Chiusura Online Courses
-
+    dateTable: [
+      {
+        title: 'Save up to 40% by paying weekly',
+        courses: ' Number of Courses',
+        time: 'Time',
+        web: 'Web Designing',
+        human: 'Human-Centered Design',
+      },
+      {
+        title: 'Standard',
+        courses: '2',
+        time: '15 Days',
+        web: '<i class="fas fa-check"></i>',
+        human: '<i class="fas fa-check"></i>',
+      },
+      {
+        title: 'Professional',
+        courses: '4',
+        time: '30 Days',
+        web: '<i class="fas fa-check"></i>',
+        human: '<i class="fas fa-check"></i>',
+      },
+      {
+        title: 'Advanced',
+        courses: '6',
+        time: '30 Days',
+        web: '<i class="fas fa-check"></i>',
+        human: '<i class="fas fa-check"></i>',
+      },
+    ], //Chiusura Date Table
 
 
 

@@ -133,7 +133,33 @@ var app = new Vue({
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
       tag: 'Business'
-    }] //Chiusura Online Courses
+    }],
+    //Chiusura Online Courses
+    dateTable: [{
+      title: 'Save up to 40% by paying weekly',
+      courses: ' Number of Courses',
+      time: 'Time',
+      web: 'Web Designing',
+      human: 'Human-Centered Design'
+    }, {
+      title: 'Standard',
+      courses: '2',
+      time: '15 Days',
+      web: '<i class="fas fa-check"></i>',
+      human: '<i class="fas fa-check"></i>'
+    }, {
+      title: 'Professional',
+      courses: '4',
+      time: '30 Days',
+      web: '<i class="fas fa-check"></i>',
+      human: '<i class="fas fa-check"></i>'
+    }, {
+      title: 'Advanced',
+      courses: '6',
+      time: '30 Days',
+      web: '<i class="fas fa-check"></i>',
+      human: '<i class="fas fa-check"></i>'
+    }] //Chiusura Date Table
 
   },
   //Chiusura Data

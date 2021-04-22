@@ -551,3 +551,6 @@ h4 {
   background-repeat: no-repeat;
   background-size: inherit;
 }
+#pricing .container .content-pricing .table-pricing .content-table-pricing table {
+  margin: 0 auto;
+}
