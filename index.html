@@ -45,22 +45,22 @@
     <section id="jumbo">
       <div class="container fluid">
         <div class="content-jumbo">
-          <!-- <div class="card-jumbo" v-for="slide in jumboSlide">
-            <img :src="slideImgBase + `${slide.img}` + '-background.jpg'" alt="">
-            <div class="text-jumbo txt-center">
-              <h2>{{ slide.title }}</h2>
-              <p>{{ slide.text }}</p>
-              <button>{{ slide.button }}</button>
-            </div>
-          </div> -->
           <div class="card-jumbo">
-            <img src="assets/img/h5-slide-3-background.jpg" alt="">
+            <img :src="slideImgBase + `${jumboSlide[index].img}` + '-background.jpg'" alt="">
+            <div class="text-jumbo txt-center">
+              <h2>{{ jumboSlide[index].title }}</h2>
+              <p>{{ jumboSlide[index].text }}</p>
+              <button @click="slider">{{ jumboSlide[index].button }}</button>
+              <div class="icon-jumbo">
+                <i class="fas fa-circle" v-for="slide in jumboSlide"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="courses">
-      <div class="container mt-70">
+    <section id="courses" class="mt-70">
+      <div class="container">
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
             <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
@@ -69,8 +69,8 @@
         </div>
       </div>
     </section>
-    <section id="tutoring">
-      <div class="container mt-120">
+    <section id="tutoring" class="mt-120">
+      <div class="container">
         <div class="content-tutoring">
           <div class="text-tutoring">
             <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
@@ -85,8 +85,8 @@
         </div>
       </div>
     </section>
-    <section id="world">
-      <div class="container mt-120">
+    <section id="world" class="mt-120">
+      <div class="container">
         <div class="content-world">
           <div class="img-world">
             <img class="mt-50" src="assets/img/h5-img-2.jpg" alt="Immagine ragazzi con le mani sul mondo">
@@ -129,8 +129,8 @@
         </div>
       </div>
     </section>
-    <section id="possibilities">
-      <div class="container mt-120">
+    <section id="possibilities" class="mt-120">
+      <div class="container">
         <div class="content-possibilities">
           <div class="course-possibilities">
             <div class="content-course">
@@ -204,7 +204,7 @@
       </div>
     </section>
     <section id="pricing" class="mt-120">
-      <div class="container background fluid">
+      <div class="container background fluid pb-120">
         <div class="content-pricing">
           <div class="text-pricing txt-center">
             <h4>Pricing Plans</h4>
@@ -257,8 +257,8 @@
         </div>
       </div>
     </section>
-    <section id="partners">
-      <div class="container mtb-120">
+    <section id="partners" class="mtb-90">
+      <div class="container">
         <div class="content-partners">
           <div class="img-partners" v-for="partner in partners">
             <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="">

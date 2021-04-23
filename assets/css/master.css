@@ -178,6 +178,10 @@ h4 {
   padding-bottom: 100px;
 }
 
+.pb-120 {
+  padding-bottom: 120px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -260,6 +264,11 @@ h4 {
 .mtb-70 {
   margin-top: 70px;
   margin-bottom: 70px;
+}
+
+.mtb-90 {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .mtb-120 {
@@ -652,6 +661,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background-color: #ffffff;
+  border: 2px solid #eaebeb;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button:first-child {
   visibility: hidden;
@@ -664,10 +674,13 @@ h4 {
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button button {
   padding: 10px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button.button:last-child button {
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button.button:nth-child(3) button {
   color: #ffffff;
   background-color: #40c4ff;
+  border: 2px solid #40c4ff;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
   color: #40c4ff;
@@ -678,6 +691,10 @@ h4 {
   justify-content: space-around;
   align-items: center;
 }
+#partners .container .content-partners .img-partners img {
+  width: 200px;
+}
+
 footer #footer .container.background {
   background-color: #222222;
 }

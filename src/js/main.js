@@ -44,6 +44,7 @@ var app = new Vue ({
         link: '#'
       },
     ], //Chiusura Icon Navbar
+    index: 0,
     slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [
       {
@@ -275,6 +276,10 @@ var app = new Vue ({
   }, //Chiusura Data
 
   methods: {
+
+    slider: function () {
+      this.index++;
+    }
 
     // getBenefit: function (possibilities) {
     //   console.log(possibilities[0].benefit[0].first);

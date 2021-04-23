@@ -369,6 +369,7 @@
                     text-transform: uppercase;
                     letter-spacing: .05em;
                     background-color: $white;
+                    border: 2px solid #eaebeb;
                   }
                   &.button:first-child{
                     visibility: hidden;
@@ -378,14 +379,16 @@
                   &.button {
                     padding: 20px 0;
                     background-color: $celeste-back-table;
-
                     button {
                       padding: 10px 30px;
+                      font-weight: 600;
+                      letter-spacing: 1px;
                     }
-                  &.button:last-child {
+                  &.button:nth-child(3) {
                     button {
                       color: $white;
                       background-color: $celeste-button;
+                      border: 2px solid $celeste-button;
                     }
                   }
                   }
@@ -409,7 +412,7 @@
       @include flex-space-around-center;
       .img-partners {
         img {
-
+          width: 200px;
         }
       }
     }
