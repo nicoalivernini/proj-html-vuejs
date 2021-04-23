@@ -235,19 +235,38 @@ var app = new Vue ({
     ], //Chiusura Partners
     menuFooter: [
       {
-        // title: '',
-        // img: '',
+        widgetContact: [
+          {
+            title: 'Prova',
+            // img: '',
+            description: 'Providing Life Changing',
+            experience: 'Experiences Through',
+            education: 'Education. Class That Fit your',
+            life: 'Busy Life. Closer to Home',
+          }
+        ]
       },
       {
-        title: 'Popular Courses',
-
+        widgetPopularCourses: [
+          {
+            title: 'Popular Courses',
+          }
+        ]
       },
       {
-        title: 'Support',
+        widgetSupport: [
+          {
+            title: 'Support',
+          }
+        ]
       },
       {
-        title: 'Flexible Learning',
-        //img: '';
+        widgetLearning: [
+          {
+            title: 'Flexible Learning',
+            //img: '';
+          }
+        ]
       },
     ], //Chiusura Menu Footer
 

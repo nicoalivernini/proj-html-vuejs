@@ -3,15 +3,19 @@
     .content-courses {
       @include flex-space-between-center;
       .card-courses {
-        background-color: #f7fdff;
+        width: 15%;
+        background-color: #f2f8fc;
         @include flex-column-center-center;
-        padding: 30px 20px;
+        padding: 40px;
         img {
-          width: 50px;
+          width: 80px;
         }
         h3 {
-          padding: 20px 0;
+          color: $title-gray;
+          padding-top: 20px;
           font-family: 'Merriweather', serif;
+          font-size: 15px;
+          font-weight: 700;
         }
       }
     }
@@ -34,7 +38,9 @@
         }
       }
       .img-tutoring {
-
+        img {
+          width: 100%;
+        }
       }
     }
   }

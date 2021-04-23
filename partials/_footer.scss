@@ -5,11 +5,13 @@ footer {
         background-color: $background-footer;
       }
       .content-footer {
+
+        padding: 120px 10% 70px;
         .menu-footer {
           .content-footer-menu {
             display: flex;
             .column-menu {
-
+              width: 25%;
             }
           }
         }

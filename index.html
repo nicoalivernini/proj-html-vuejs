@@ -60,7 +60,7 @@
       </div>
     </section>
     <section id="courses">
-      <div class="container mt-30">
+      <div class="container mt-70">
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
             <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
@@ -70,7 +70,7 @@
       </div>
     </section>
     <section id="tutoring">
-      <div class="container mt-70">
+      <div class="container mt-120">
         <div class="content-tutoring">
           <div class="text-tutoring">
             <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
@@ -258,7 +258,7 @@
       </div>
     </section>
     <section id="partners">
-      <div class="container mt-120">
+      <div class="container mtb-120">
         <div class="content-partners">
           <div class="img-partners" v-for="partner in partners">
             <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="">
@@ -268,12 +268,15 @@
     </section>
     <footer>
       <section id="footer">
-        <div class="container fluid background mt-120">
+        <div class="container fluid background">
           <div class="content-footer">
             <div class="menu-footer">
               <div class="content-footer-menu">
-                <div class="column-menu" v-for="menu in menuFooter">
-                <h6>{{ menu.title }}</h6>
+                <div class="column-menu" v-for="(menu, i) in menuFooter">
+                <ul>
+                  <li></li>
+                </ul>
+
                 </div>
               </div>
             </div>

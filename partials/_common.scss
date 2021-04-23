@@ -14,17 +14,20 @@
 .subtitle {
   // width: 80%;
   margin: 0 auto;
-  font-size: 23px;
+  font-size: 17px;
   color: $text-gray;
   padding-top: 25px;
   padding-bottom: 25px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 h4 {
   font-family: 'Merriweather', serif;
-  font-size: 50px;
+  font-size: 38px;
   color: $title-gray;
   font-weight: 500;
+  line-height: 45px;
 }
 
 //Padding
@@ -251,4 +254,9 @@ h4 {
 .mtb-70 {
   margin-top: 70px;
   margin-bottom: 70px;
+}
+
+.mtb-120 {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
