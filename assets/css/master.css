@@ -553,6 +553,11 @@ h4 {
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table {
   margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead {
+  background-color: red;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th {
   font-family: "Merriweather", serif;
@@ -560,17 +565,19 @@ h4 {
   padding: 10px 10px 10px 30px;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td {
-  border: 1px solid black;
+  border-bottom: 1px solid #efefef;
   font-weight: 400;
   font-size: 20px;
   color: grey;
-  font-weight: 700;
   text-align: center;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td:first-child {
   font-family: "Merriweather", serif;
   padding: 10px 10px 10px 30px;
   text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  height: 60px;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
   color: #40c4ff;

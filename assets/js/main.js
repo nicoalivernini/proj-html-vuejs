@@ -135,6 +135,7 @@ var app = new Vue({
       tag: 'Business'
     }],
     //Chiusura Online Courses
+    dataTableImgBase: 'assets/img/h5-custom-icon-',
     dateTable: [{
       title: 'Save up to 40% by paying weekly',
       courses: ' Number of Courses',
@@ -146,7 +147,9 @@ var app = new Vue({
       android: 'Android Developer',
       english: 'Business English'
     }, {
+      img: '7',
       title: 'Standard',
+      cost: '$12',
       courses: '2',
       time: '15 Days',
       web: '<i class="fas fa-check"></i>',
@@ -156,7 +159,9 @@ var app = new Vue({
       android: '<i class="fas fa-times"></i>',
       english: '<i class="fas fa-times"></i>'
     }, {
+      img: '8',
       title: 'Professional',
+      cost: '$59',
       courses: '4',
       time: '30 Days',
       web: '<i class="fas fa-check"></i>',
@@ -166,7 +171,9 @@ var app = new Vue({
       android: '<i class="fas fa-times"></i>',
       english: '<i class="fas fa-times"></i>'
     }, {
+      img: '9',
       title: 'Advanced',
+      cost: '$88',
       courses: '6',
       time: '30 Days',
       web: '<i class="fas fa-check"></i>',

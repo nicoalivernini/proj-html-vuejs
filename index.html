@@ -215,10 +215,13 @@
               <table>
                 <thead>
                   <tr>
-                    <th v-for="date in dateTable">{{ date.title }}</th>
+                    <th v-for="date in dateTable"><img :src="dataTableImgBase + `${date.img}` + '.png'" alt=""></th>
                   </tr>
                   <tr>
                     <th v-for="date in dateTable">{{ date.title }}</th>
+                  </tr>
+                  <tr>
+                    <th v-for="date in dateTable">{{ date.cost }}</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -286,7 +286,10 @@
         .content-table-pricing {
           table {
             margin: 0 auto;
+            border-collapse: collapse;
+            border-spacing: 0;
             thead {
+              background-color: red;
               tr {
                 th {
                   font-family: 'Merriweather',serif;
@@ -298,16 +301,18 @@
             tbody {
               tr {
                 td {
-                  border: 1px solid black;
+                  border-bottom: 1px solid #efefef;
                   font-weight: 400;
                   font-size: 20px;
                   color: grey;
-                  font-weight: 700;
                   text-align: center;
                   &:first-child {
                     font-family: 'Merriweather',serif;
                     padding: 10px 10px 10px 30px;
                     text-align: left;
+                    font-size: 16px;
+                    font-weight: 600;
+                    height: 60px;
                   }
                   i {
                     &.fa-check {
