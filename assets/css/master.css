@@ -28,7 +28,7 @@ body {
   color: #595959;
   padding-top: 25px;
   padding-bottom: 25px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 25px;
 }
 
@@ -85,6 +85,11 @@ h4 {
 .ptb-45 {
   padding-top: 45px;
   padding-bottom: 45px;
+}
+
+.ptb-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .ptb-150 {
@@ -390,9 +395,10 @@ h4 {
 #world .container .content-world .text-world .data-world .data-content-world p {
   color: #40c4ff;
   font-family: "Merriweather", serif;
+  padding-top: 10px;
 }
 #world .container .content-world .text-world .data-world .data-content-world p:first-child {
-  font-size: 70px;
+  font-size: 45px;
   font-weight: 600;
 }
 
@@ -403,6 +409,7 @@ h4 {
   background-image: url("../img/h5-parallax-img-1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 #review .container .content-review {
   padding: 0 10%;
@@ -417,8 +424,8 @@ h4 {
   color: #ffffff;
 }
 #review .container .content-review .card-review .text-card p {
-  line-height: 35px;
-  font-size: 22px;
+  line-height: 30px;
+  font-size: 18px;
   width: 80%;
   margin: 0 auto;
   font-weight: 300;
@@ -430,7 +437,7 @@ h4 {
 }
 #review .container .content-review .card-review .text-card h5 {
   font-family: "Merriweather", serif;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 500;
 }
 #review .container .content-review .card-review .icon-card {
@@ -475,7 +482,8 @@ h4 {
   list-style: none;
 }
 #possibilities .container .content-possibilities .description-course .benefit-course ul li {
-  font-size: 23px;
+  font-size: 18px;
+  font-weight: 300;
   color: #595959;
   padding: 10px 0;
 }

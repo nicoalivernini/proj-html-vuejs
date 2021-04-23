@@ -70,9 +70,9 @@
             p {
               color: $celeste-button;
               font-family: 'Merriweather', serif;
-
+              padding-top: 10px;
               &:first-child {
-                font-size: 70px;
+                font-size: 45px;
                 font-weight: 600;
               }
 
@@ -90,6 +90,7 @@
       background-image: url('../img/h5-parallax-img-1.png');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: 50%;
     }
     .content-review {
       padding: 0 10%;
@@ -103,8 +104,8 @@
         .text-card {
           color: $white;
           p {
-            line-height: 35px;
-            font-size: 22px;
+            line-height: 30px;
+            font-size: 18px;
             width: 80%;
             margin: 0 auto;
             font-weight: 300;
@@ -116,7 +117,7 @@
           }
           h5 {
             font-family: 'Merriweather', serif;
-            font-size: 25px;
+            font-size: 23px;
             font-weight: 500;
           }
         }
@@ -169,7 +170,8 @@
           ul {
             list-style: none;
             li {
-              font-size: 23px;
+              font-size: 18px;
+              font-weight: 300;
               color: $text-gray;
               padding: 10px 0;
               &:before{
