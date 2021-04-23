@@ -185,7 +185,29 @@ var app = new Vue({
       android: '<i class="fas fa-check"></i>',
       english: '<i class="fas fa-check"></i>',
       button: 'Get it now'
-    }] //Chiusura Date Table
+    }],
+    //Chiusura Date Table
+    partnersImgBase: 'assets/img/h5-client-',
+    partners: [{
+      img: '1'
+    }, {
+      img: '2'
+    }, {
+      img: '3'
+    }, {
+      img: '4'
+    }],
+    //Chiusura Partners
+    menuFooter: [{// title: '',
+      // img: '',
+    }, {
+      title: 'Popular Courses'
+    }, {
+      title: 'Support'
+    }, {
+      title: 'Flexible Learning' //img: '';
+
+    }] //Chiusura Menu Footer
 
   },
   //Chiusura Data

@@ -257,6 +257,35 @@
         </div>
       </div>
     </section>
+    <section id="partners">
+      <div class="container mt-120">
+        <div class="content-partners">
+          <div class="img-partners" v-for="partner in partners">
+            <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section id="footer">
+        <div class="container fluid background mt-120">
+          <div class="content-footer">
+            <div class="menu-footer">
+              <div class="content-footer-menu">
+                <div class="column-menu" v-for="menu in menuFooter">
+                <h6>{{ menu.title }}</h6>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-menu">
+              <div class="content-copyright-menu">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
   </div> <!-- Chiusura oggetto Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="assets/js/main.js" charset="utf-8"></script>

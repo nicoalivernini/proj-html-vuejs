@@ -1,0 +1,19 @@
+footer {
+  #footer {
+    .container {
+      &.background {
+        background-color: $background-footer;
+      }
+      .content-footer {
+        .menu-footer {
+          .content-footer-menu {
+            display: flex;
+            .column-menu {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

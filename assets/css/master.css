@@ -593,11 +593,10 @@ h4 {
   padding: 10px 10px 10px 30px;
   text-align: left;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   height: 60px;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td button {
-  background-color: #f7fdff;
   color: grey;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -608,6 +607,29 @@ h4 {
   background-color: transparent;
   border: 0;
 }
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button {
+  padding: 20px 0;
+  background-color: #f7fdff;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button button {
+  padding: 10px 30px;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button.button:last-child button {
+  color: #ffffff;
+  background-color: #40c4ff;
+}
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
   color: #40c4ff;
+}
+
+#partners .container .content-partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer #footer .container.background {
+  background-color: #222222;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu {
+  display: flex;
 }

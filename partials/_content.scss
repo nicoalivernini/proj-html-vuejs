@@ -330,11 +330,10 @@
                     padding: 10px 10px 10px 30px;
                     text-align: left;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-weight: 500;
                     height: 60px;
                   }
                   button {
-                    background-color: $celeste-back-table;
                     color: grey;
                     text-transform: uppercase;
                     letter-spacing: .05em;
@@ -345,6 +344,20 @@
                     background-color: transparent;
                     border: 0;
                   }
+                  &.button {
+                    padding: 20px 0;
+                    background-color: $celeste-back-table;
+
+                    button {
+                      padding: 10px 30px;
+                    }
+                  &.button:last-child {
+                    button {
+                      color: $white;
+                      background-color: $celeste-button;
+                    }
+                  }
+                  }
                   i {
                     &.fa-check {
                       color: $celeste-button;
@@ -354,6 +367,18 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+#partners {
+  .container {
+    .content-partners {
+      @include flex-space-around-center;
+      .img-partners {
+        img {
+
         }
       }
     }
