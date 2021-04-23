@@ -215,13 +215,11 @@
               <table>
                 <thead>
                   <tr>
-                    <th v-for="date in dateTable"><img :src="dataTableImgBase + `${date.img}` + '.png'" alt=""></th>
-                  </tr>
-                  <tr>
-                    <th v-for="date in dateTable">{{ date.title }}</th>
-                  </tr>
-                  <tr>
-                    <th v-for="date in dateTable">{{ date.cost }}</th>
+                    <th rowspan="3" v-for="date in dateTable">
+                      <img :src="dataTableImgBase + `${date.img}` + '.png'" alt="">
+                      <h5>{{ date.title }}</h5>
+                      <p>{{ date.cost }}</p>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -248,6 +246,9 @@
                   </tr>
                   <tr>
                     <td v-for="date in dateTable" v-html="date.english"></td>
+                  </tr>
+                  <tr>
+                    <td v-for="date in dateTable" class="button"><button>{{ date.button }}</button></td>
                   </tr>
                 </tbody>
               </table>

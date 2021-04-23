@@ -289,23 +289,42 @@
             border-collapse: collapse;
             border-spacing: 0;
             thead {
-              background-color: red;
               tr {
                 th {
+                  padding: 30px 50px 30px 50px;
                   font-family: 'Merriweather',serif;
-                  font-size: 16px;
-                  padding: 10px 10px 10px 30px;
+                  font-weight: 700;
+                  background-color: $celeste-back-table;
+                  border: 1px solid $border-gray-table;
+                  &:first-child {
+                    background-color: $white;
+                    font-size: 24px;
+                  }
+                  img{
+                    padding-bottom: 10px;
+                  }
+                  h5 {
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                    color: $gray-title-table;
+                  }
+                  p {
+                    font-size: 22px;
+                    padding-bottom: 10px;
+                    color: $gray-title-table;
+                  }
                 }
               }
             }
             tbody {
               tr {
                 td {
-                  border-bottom: 1px solid #efefef;
+                  border: 1px solid $border-gray-table;
                   font-weight: 400;
                   font-size: 20px;
                   color: grey;
                   text-align: center;
+                  background-color: $white;
                   &:first-child {
                     font-family: 'Merriweather',serif;
                     padding: 10px 10px 10px 30px;
@@ -313,6 +332,18 @@
                     font-size: 16px;
                     font-weight: 600;
                     height: 60px;
+                  }
+                  button {
+                    background-color: $celeste-back-table;
+                    color: grey;
+                    text-transform: uppercase;
+                    letter-spacing: .05em;
+                    background-color: $white;
+                  }
+                  &.button:first-child{
+                    visibility: hidden;
+                    background-color: transparent;
+                    border: 0;
                   }
                   i {
                     &.fa-check {

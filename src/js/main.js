@@ -173,7 +173,7 @@ var app = new Vue ({
         marketing: 'Basic Marketing',
         python: 'Python for Everybody',
         android: 'Android Developer',
-        english: 'Business English'
+        english: 'Business English',
       },
       {
         img: '7',
@@ -186,7 +186,8 @@ var app = new Vue ({
         marketing: '<i class="fas fa-times"></i>',
         python: '<i class="fas fa-times"></i>',
         android: '<i class="fas fa-times"></i>',
-        english: '<i class="fas fa-times"></i>'
+        english: '<i class="fas fa-times"></i>',
+        button: 'Get it now'
       },
       {
         img: '8',
@@ -199,7 +200,8 @@ var app = new Vue ({
         marketing: '<i class="fas fa-check"></i>',
         python: '<i class="fas fa-check"></i>',
         android: '<i class="fas fa-times"></i>',
-        english: '<i class="fas fa-times"></i>'
+        english: '<i class="fas fa-times"></i>',
+        button: 'Get it now'
       },
       {
         img: '9',
@@ -212,7 +214,8 @@ var app = new Vue ({
         marketing: '<i class="fas fa-check"></i>',
         python: '<i class="fas fa-check"></i>',
         android: '<i class="fas fa-check"></i>',
-        english: '<i class="fas fa-check"></i>'
+        english: '<i class="fas fa-check"></i>',
+        button: 'Get it now'
       },
     ], //Chiusura Date Table
 

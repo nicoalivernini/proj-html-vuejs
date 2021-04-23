@@ -556,20 +556,37 @@ h4 {
   border-collapse: collapse;
   border-spacing: 0;
 }
-#pricing .container .content-pricing .table-pricing .content-table-pricing table thead {
-  background-color: red;
-}
 #pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th {
+  padding: 30px 50px 30px 50px;
   font-family: "Merriweather", serif;
-  font-size: 16px;
-  padding: 10px 10px 10px 30px;
+  font-weight: 700;
+  background-color: #f7fdff;
+  border: 1px solid #efefef;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th:first-child {
+  background-color: #ffffff;
+  font-size: 24px;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th img {
+  padding-bottom: 10px;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th h5 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #3e3e3e;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th p {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #3e3e3e;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td {
-  border-bottom: 1px solid #efefef;
+  border: 1px solid #efefef;
   font-weight: 400;
   font-size: 20px;
   color: grey;
   text-align: center;
+  background-color: #ffffff;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td:first-child {
   font-family: "Merriweather", serif;
@@ -578,6 +595,18 @@ h4 {
   font-size: 16px;
   font-weight: 600;
   height: 60px;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td button {
+  background-color: #f7fdff;
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #ffffff;
+}
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button:first-child {
+  visibility: hidden;
+  background-color: transparent;
+  border: 0;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
   color: #40c4ff;
