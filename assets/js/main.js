@@ -51,14 +51,14 @@ var app = new Vue({
       button: 'Register now'
     }, {
       img: '2',
-      title: 'Contemporary Ideas',
+      title: 'Increase your knowledge',
       text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-      button: 'Register now'
+      button: 'Search now'
     }, {
       img: '1',
-      title: 'Contemporary Ideas',
+      title: 'Boost Your Career',
       text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
-      button: 'Register now'
+      button: 'Contact now'
     }],
     //Chiusura Jumbo Slide
     coursesImgBase: 'assets/img/h5-custom-icon-',
@@ -225,9 +225,27 @@ var app = new Vue({
 
   },
   //Chiusura Data
+  created: function created() {
+    var _this = this;
+
+    setInterval(function () {
+      _this.next();
+    }, 3000);
+  },
+  //Chiusura Created
   methods: {
-    slider: function slider() {
-      this.index++;
+    next: function next() {
+      if (this.index < this.jumboSlide.length - 1) {
+        this.index++;
+      } else {
+        this.index = 0;
+      }
+
+      ;
+    },
+    active: function active(index) {
+      this.index = index;
+      console.log(index);
     } // getBenefit: function (possibilities) {
     //   console.log(possibilities[0].benefit[0].first);
     //   return possibilities[0].benefit[0].first;

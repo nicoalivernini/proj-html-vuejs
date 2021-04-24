@@ -49,12 +49,12 @@
             <img :src="slideImgBase + `${jumboSlide[index].img}` + '-background.jpg'" alt="">
             <div class="text-jumbo txt-center">
               <h2>{{ jumboSlide[index].title }}</h2>
-              <p>{{ jumboSlide[index].text }}</p>
-              <button @click="slider">{{ jumboSlide[index].button }}</button>
-              <div class="icon-jumbo">
-                <i class="fas fa-circle" v-for="slide in jumboSlide"></i>
-              </div>
+              <p class="mt-50">{{ jumboSlide[index].text }}</p>
+              <button class="mt-50" @click="next">{{ jumboSlide[index].button }}</button>
             </div>
+          </div>
+          <div class="icon-jumbo">
+            <i class="fas fa-circle" v-for="dot in jumboSlide" :class="(dot-1 == index ) ? 'active' : '' " @click='active(dot-1)'></i>
           </div>
         </div>
       </div>

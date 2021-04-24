@@ -319,11 +319,11 @@ h4 {
   color: white;
 }
 
-#jumbo .container .content-jumbo .card-jumbo {
+#jumbo .container .content-jumbo {
   position: relative;
 }
-#jumbo .container .content-jumbo .card-jumbo img {
-  width: 100%;
+#jumbo .container .content-jumbo .card-jumbo {
+  position: relative;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo {
   position: absolute;
@@ -334,15 +334,37 @@ h4 {
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo h2 {
   font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 65px;
+  color: #ffffff;
+}
+#jumbo .container .content-jumbo .card-jumbo .text-jumbo p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo button {
   color: #ffffff;
   background-color: #40c4ff;
   border: none;
-  padding: 15px 30px;
+  padding: 25px 40px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 600;
+  font-size: 22px;
+}
+#jumbo .container .content-jumbo .icon-jumbo {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#jumbo .container .content-jumbo .icon-jumbo i {
+  padding: 0 5px;
+}
+#jumbo .container .content-jumbo .icon-jumbo i.active {
+  color: red;
 }
 
 #courses .container .content-courses {
