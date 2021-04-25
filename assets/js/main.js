@@ -42,7 +42,7 @@ var app = new Vue({
       link: '#'
     }],
     //Chiusura Icon Navbar
-    index: 0,
+    index: '0',
     slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [{
       img: '3',
@@ -84,6 +84,24 @@ var app = new Vue({
       text: 'Events'
     }],
     //Chiusura Data World
+    reviewImgBase: 'assets/img/testimonials-standard-',
+    review: [{
+      author: 'Joan Collins',
+      type: 'Student',
+      description: 'Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.',
+      img: '2'
+    }, {
+      author: 'Joe Kennedy',
+      type: 'Architect',
+      description: 'Nisi elit consequat ipsutis sem nibh id elit. Morbi accumsan ipsum velit. Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor. Nam nec tellus. Duis sed odio sit amet nivulputate cursus a sit amet mauris. ',
+      img: '3'
+    }, {
+      author: 'Catherine Fletcher',
+      type: 'Psychologist',
+      description: 'Lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.Mroin gravida nibh vel veliauctor aliquenean aollicitudin.',
+      img: '5'
+    }],
+    indexPossibilities: 0,
     possibilities: [{
       intro: 'What We Do',
       title: 'Learning Possibilities',
@@ -98,15 +116,70 @@ var app = new Vue({
         title: 'People teach. People learn. This is where they connect.'
       }]
     }, {
-      intro: 'Degree Programme'
+      intro: 'Degree Programme',
+      title: 'Degree Programme',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
+      benefit: [{
+        title: 'The trusted name for specialized training.'
+      }, {
+        title: 'People teach. People learn. This is where they connect.'
+      }, {
+        title: 'We enrich lives through learning'
+      }, {
+        title: 'Maximing potentual through individual attention.'
+      }]
     }, {
-      intro: 'Career Achievements'
+      intro: 'Career Achievements',
+      title: 'Career Achievements',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
+      benefit: [{
+        title: 'People teach. People learn. This is where they connect.'
+      }, {
+        title: 'The trusted name for specialized training.'
+      }, {
+        title: 'Maximing potentual through individual attention.'
+      }, {
+        title: 'We enrich lives through learning'
+      }]
     }, {
-      intro: 'Personal Managment'
+      intro: 'Personal Managment',
+      title: 'Personal Managment',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
+      benefit: [{
+        title: 'Maximing potentual through individual attention.'
+      }, {
+        title: 'We enrich lives through learning'
+      }, {
+        title: 'People teach. People learn. This is where they connect.'
+      }, {
+        title: 'The trusted name for specialized training.'
+      }]
     }, {
-      intro: 'Steps To Success'
+      intro: 'Steps To Success',
+      title: 'Steps To Success',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
+      benefit: [{
+        title: 'People teach. People learn. This is where they connect.'
+      }, {
+        title: 'Maximing potentual through individual attention.'
+      }, {
+        title: 'The trusted name for specialized training.'
+      }, {
+        title: 'We enrich lives through learning'
+      }]
     }, {
-      intro: 'Knowledge Transfer'
+      intro: 'Knowledge Transfer',
+      title: 'Knowledge Transfer',
+      description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
+      benefit: [{
+        title: 'We enrich lives through learning'
+      }, {
+        title: 'The trusted name for specialized training.'
+      }, {
+        title: 'Maximing potentual through individual attention.'
+      }, {
+        title: 'People teach. People learn. This is where they connect.'
+      }]
     }],
     //Chiusura Possibilities
     onlineCoursesImgBase: 'assets/img/course-',
@@ -134,7 +207,25 @@ var app = new Vue({
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
       tag: 'Business'
-    }],
+    } // {
+    //   img: 2,
+    //   title: 'Speed Reading',
+    //   author: 'Emanuel Red',
+    //   price: 'Free',
+    //   description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
+    //   people: '2',
+    //   tag: 'Hobby'
+    // },
+    // {
+    //   img: 3,
+    //   title: 'Mockuping',
+    //   author: 'Daniele Fied',
+    //   price: 'Free',
+    //   description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
+    //   people: '4',
+    //   tag: 'Design'
+    // }
+    ],
     //Chiusura Online Courses
     dataTableImgBase: 'assets/img/h5-custom-icon-',
     dateTable: [{
@@ -202,13 +293,7 @@ var app = new Vue({
     widgetFirst: [{
       title: 'Prova',
       // img: '',
-      description: 'Providing Life Changing'
-    }, {
-      description: 'Experiences Through'
-    }, {
-      description: 'Education. Class That Fit your'
-    }, {
-      description: 'Busy Life. Closer to Home'
+      description: 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home'
     }, {
       description: '1-677-124-44227'
     }, {
@@ -260,7 +345,7 @@ var app = new Vue({
     //  Chiusura widgetCopyRight
     widgetCopyLeft: [{
       title: 'Call +44 300 303 0266',
-      link: '#'
+      link: 'tel:#'
     }, {
       title: 'Follow Us',
       link: ''
@@ -268,14 +353,14 @@ var app = new Vue({
     //  Chiusura widgetCopyRight
     iconSocialFooterImgBase: 'fab fa-',
     iconSocialFooter: [{
-      title: 'facebook-f',
-      link: '#'
+      title: 'twitter',
+      link: 'www.twitter.com'
     }, {
       title: 'instagram',
-      link: '#'
+      link: 'www.instagram.com'
     }, {
-      title: 'twitter',
-      link: '#'
+      title: 'facebook-f',
+      link: 'www.facebook.com'
     }] //Chiusura Icon Social Footer
 
   },
@@ -301,6 +386,9 @@ var app = new Vue({
     active: function active(index) {
       this.index = index;
       console.log(index);
+    },
+    selezione: function selezione(index) {
+      this.indexPossibilities = index;
     } // getBenefit: function (possibilities) {
     //   console.log(possibilities[0].benefit[0].first);
     //   return possibilities[0].benefit[0].first;

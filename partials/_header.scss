@@ -38,6 +38,13 @@
             @include flex-center;
             list-style: none;
             li {
+              &:nth-child(2) {
+                a {
+                  i {
+                    color: red;
+                  }
+                }
+              }
               a {
                 i {
                   color: white;
@@ -57,7 +64,7 @@
       .card-jumbo {
         position: relative;
         img {
-          //width: 100%;
+          width: 100%;
         }
         .text-jumbo {
           position: absolute;

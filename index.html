@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="icon-jumbo">
-            <i class="fas fa-circle" v-for="dot in jumboSlide" :class="(dot-1 == index ) ? 'active' : '' " @click='active(dot-1)'></i>
+            <i class="fas fa-circle" v-for="(slide, i) in jumboSlide" :class="(i == index ) ? 'active' : '' " @click='active(dot-1)'></i>
           </div>
         </div>
       </div>
@@ -111,19 +111,15 @@
         <div class="content-review">
           <div class="card-review ptb-150">
             <div class="img-card">
-              <img src="assets/img/testimonials-standard-2.png" alt="">
+              <img :src="reviewImgBase + `${review[index].img}` + '.png'" alt="">
             </div>
             <div class="text-card txt-center">
-              <p class="ptb-30">"Mroin gravida nibh vel veliauctor aliquenean aollicitudin,
-                lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh
-                id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris.
-                Morbi accumsan ipsum velit. Nam nec tellus."
-              </p>
-              <h5 class="ptb-10">Joan Collins</h5>
-              <p>Student</p>
+              <p class="ptb-30">{{ review[index].description }}</p>
+              <h5 class="ptb-10">{{ review[index].author }}</h5>
+              <p>{{ review[index].type }}</p>
             </div>
             <div class="icon-card">
-              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle" v-for="(data, i) in review" :class="(i == index ) ? 'active' : '' "></i>
             </div>
           </div>
         </div>
@@ -135,21 +131,21 @@
           <div class="course-possibilities">
             <div class="content-course">
               <ul>
-                <li v-for="possibilitie in possibilities"> {{ possibilitie.intro }}</li>
+                <li v-for="(possibilitie, i) in possibilities" @click="selezione(i)" :class="(i == indexPossibilities) ? 'active' : '' ">{{ possibilitie.intro }}</li>
               </ul>
             </div>
           </div>
           <div class="description-course ml-70">
             <div class="content-description">
-              <h4>{{ possibilities[0].title }}</h4>
-              <p class="subtitle">{{ possibilities[0].description }}</p>
+              <h4>{{ possibilities[indexPossibilities].title }}</h4>
+              <p class="subtitle">{{ possibilities[indexPossibilities].description }}</p>
             </div>
             <div class="benefit-course">
               <ul>
-                <li v-for="(benefit, i) in possibilities">{{ possibilities[0].benefit[0].title }}</li>
+                <li v-for="benefit in possibilities[indexPossibilities].benefit">{{ benefit.title }}</li>
               </ul>
               <div class="img-benefit">
-                <img src="assets/img/h12-tabs-icon-1.png" alt="">
+                <img :src="'assets/img/h12-tabs-icon-' + `${indexPossibilities + 1}` + '.png'" alt="">
               </div>
             </div>
           </div>
@@ -327,9 +323,19 @@
                 </div>
                 <div class="left-copyright-menu">
                   <span v-for="data in widgetCopyLeft"><a :href=`${data.link}`>{{ data.title }}</a></span>
-                  <i v-for="data in iconSocialFooter" :class="iconSocialFooterImgBase + `${data.title}`"><a :href=`${data.link}`></a></i>
+                  <ul>
+                    <li v-for="data in iconSocialFooter"><a :href=`${data.link}`><i :class="iconSocialFooterImgBase + `${data.title}`"></i></a></li>
+                  </ul>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="pointer-up">
+            <div class="content-pointer-up">
+              <a href="#">
+                <i class="fas fa-chevron-up"></i>
+                <span>top</span>
+              </a>
             </div>
           </div>
         </div>

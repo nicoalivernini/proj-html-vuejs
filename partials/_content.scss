@@ -124,6 +124,14 @@
         .icon-card {
           color: $white;
           padding: 40px 0;
+          i {
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0 6px;
+            font-size: 12px;
+            &.active {
+              color: $white;
+            }
+          }
         }
       }
     }
@@ -145,7 +153,12 @@
               color: $text-course-possibilities;
               font-size: 16px;
               font-weight: 600;
-              &:first-child {
+              // &:first-child {
+              //   border-left: 7px solid $celeste-button;
+              //   background-color: #fcfcfc;
+              //   color: $celeste-button;
+              // }
+              &.active {
                 border-left: 7px solid $celeste-button;
                 background-color: #fcfcfc;
                 color: $celeste-button;
@@ -280,7 +293,13 @@
       .icon-card {
         .content-icon-card {
           i {
+            font-size: 12px;
             color: $celeste-button;
+            opacity: 0.5;
+            &:nth-child(2) {
+              color: $celeste-button;
+              opacity: 1;
+            }
           }
         }
       }
