@@ -479,8 +479,7 @@ var app = new Vue ({
 
     selezione: function (index) {
       this.indexPossibilities = index;
-    }
-
+    },
 
     // getBenefit: function (possibilities) {
     //   console.log(possibilities[0].benefit[0].first);

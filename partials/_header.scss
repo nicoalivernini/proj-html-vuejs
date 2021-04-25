@@ -40,11 +40,21 @@
             li {
               &:nth-child(2) {
                 a {
+
                   i {
-                    color: red;
+                    &.fa-shopping-bag {
+                    // position: absolute;
+                    // top: 50%;
+                    // width: 15px;
+                    // height: 15px;
+                    // border-radius: 50%;
+                    // color: $white;
+                    // background-color: $celeste-button;
+                    // z-index: 3;
                   }
                 }
               }
+            }
               a {
                 i {
                   color: white;
@@ -63,48 +73,53 @@
       position: relative;
       .card-jumbo {
         position: relative;
+        &.background {
+          background-image: url('../img/h5-slide-3-background.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
         img {
           width: 100%;
         }
         .text-jumbo {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
           color: $white;
           h2 {
             font-family: 'Merriweather', serif;
             font-weight: 700;
             font-size: 65px;
             color: $white;
+            padding-top: 180px;
+            padding-bottom: 25px;
           }
           p {
             font-size: 17px;
             font-weight: 400;
             line-height: 30px;
             color: $white;
+            width: 70%;
+            margin: 0 auto;
           }
           button {
             color: $white;
             background-color: $celeste-button;
             border: none;
-            padding: 25px 40px;
+            padding: 17px 30px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             font-weight: 600;
-            font-size: 22px;
+            font-size: 15px;
+            margin-bottom: 150px;
           }
         }
-      }
-      .icon-jumbo {
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        i {
-          padding: 0 5px;
-          &.active {
-            color: red;
+        .icon-jumbo {
+          padding-bottom: 30px;
+          i {
+            padding: 0 5px;
+            color: rgba(255, 255, 255, 0.5);
+            @include dotJumbo;
+            &.active {
+
+            }
           }
         }
       }

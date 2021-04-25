@@ -98,3 +98,12 @@
   vertical-align: middle;
   padding-right: 10px;
 }
+
+@mixin dotJumbo {
+  content: '\f192';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $icon-color-courses;
+  vertical-align: middle;
+  color: $white;
+}

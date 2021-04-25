@@ -45,16 +45,15 @@
     <section id="jumbo">
       <div class="container fluid">
         <div class="content-jumbo">
-          <div class="card-jumbo">
-            <img :src="slideImgBase + `${jumboSlide[index].img}` + '-background.jpg'" alt="">
+          <div class="card-jumbo background">
             <div class="text-jumbo txt-center">
               <h2>{{ jumboSlide[index].title }}</h2>
               <p class="mt-50">{{ jumboSlide[index].text }}</p>
               <button class="mt-50" @click="next">{{ jumboSlide[index].button }}</button>
             </div>
-          </div>
-          <div class="icon-jumbo">
-            <i class="fas fa-circle" v-for="(slide, i) in jumboSlide" :class="(i == index ) ? 'active' : '' " @click='active(dot-1)'></i>
+            <div class="icon-jumbo txt-center">
+              <i class="fas fa-circle" v-for="(slide, i) in jumboSlide" :class="(i == index ) ? 'active' : '' " @click='active(dot-1)'></i>
+            </div>
           </div>
         </div>
       </div>

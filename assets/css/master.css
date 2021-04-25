@@ -315,9 +315,6 @@ h4 {
   align-items: center;
   list-style: none;
 }
-#navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li:nth-child(2) a i {
-  color: red;
-}
 #navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i {
   color: white;
 }
@@ -328,14 +325,15 @@ h4 {
 #jumbo .container .content-jumbo .card-jumbo {
   position: relative;
 }
+#jumbo .container .content-jumbo .card-jumbo.background {
+  background-image: url("../img/h5-slide-3-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #jumbo .container .content-jumbo .card-jumbo img {
   width: 100%;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #ffffff;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo h2 {
@@ -343,36 +341,41 @@ h4 {
   font-weight: 700;
   font-size: 65px;
   color: #ffffff;
+  padding-top: 180px;
+  padding-bottom: 25px;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo p {
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
   color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo button {
   color: #ffffff;
   background-color: #40c4ff;
   border: none;
-  padding: 25px 40px;
+  padding: 17px 30px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 15px;
+  margin-bottom: 150px;
 }
-#jumbo .container .content-jumbo .icon-jumbo {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#jumbo .container .content-jumbo .card-jumbo .icon-jumbo {
+  padding-bottom: 30px;
 }
-#jumbo .container .content-jumbo .icon-jumbo i {
+#jumbo .container .content-jumbo .card-jumbo .icon-jumbo i {
   padding: 0 5px;
+  color: rgba(255, 255, 255, 0.5);
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #b9b9b9;
+  vertical-align: middle;
+  color: #ffffff;
 }
-#jumbo .container .content-jumbo .icon-jumbo i.active {
-  color: red;
-}
-
 #courses .container .content-courses {
   display: flex;
   justify-content: space-between;
