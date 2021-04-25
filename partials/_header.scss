@@ -27,6 +27,11 @@
                 font-size: 15px;
                 text-decoration: none;
                 color: $white;
+                &:hover {
+                  color: $celeste-button;
+                  cursor: pointer;
+                  font-weight: 600;
+                }
               }
             }
           }
@@ -38,9 +43,16 @@
             @include flex-center;
             list-style: none;
             li {
+              a {
+                i {
+                  &:hover {
+                    color: $celeste-button;
+                    cursor: pointer;
+                  }
+                }
+              }
               &:nth-child(2) {
                 a {
-
                   i {
                     &.fa-shopping-bag {
                     // position: absolute;

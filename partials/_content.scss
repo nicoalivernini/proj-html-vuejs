@@ -9,6 +9,10 @@
         padding: 40px;
         img {
           width: 80px;
+          &:hover {
+            padding-bottom: 10px;
+            cursor: pointer;
+          }
         }
         h3 {
           color: $title-gray;
@@ -34,6 +38,10 @@
             text-transform: uppercase;
             color: $celeste-button;
             font-weight: 600;
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -153,11 +161,10 @@
               color: $text-course-possibilities;
               font-size: 16px;
               font-weight: 600;
-              // &:first-child {
-              //   border-left: 7px solid $celeste-button;
-              //   background-color: #fcfcfc;
-              //   color: $celeste-button;
-              // }
+              &:hover {
+                color: $celeste-button;
+                cursor: pointer;
+              }
               &.active {
                 border-left: 7px solid $celeste-button;
                 background-color: #fcfcfc;
@@ -389,6 +396,12 @@
                     letter-spacing: .05em;
                     background-color: $white;
                     border: 2px solid #eaebeb;
+                    &:hover {
+                      color: white;
+                      background-color: $celeste-button;
+                      border: 2px solid $celeste-button;
+                      cursor: pointer;
+                    }
                   }
                   &.button:first-child{
                     visibility: hidden;
@@ -403,13 +416,13 @@
                       font-weight: 600;
                       letter-spacing: 1px;
                     }
-                  &.button:nth-child(3) {
-                    button {
-                      color: $white;
-                      background-color: $celeste-button;
-                      border: 2px solid $celeste-button;
-                    }
-                  }
+                  // &.button:nth-child(3) {
+                  //   button {
+                  //     color: $white;
+                  //     background-color: $celeste-button;
+                  //     border: 2px solid $celeste-button;
+                  //   }
+                  // }
                   }
                   i {
                     &.fa-check {
@@ -432,6 +445,10 @@
       .img-partners {
         img {
           width: 200px;
+          &:hover {
+            width: 205px;
+            cursor: pointer;
+          }
         }
       }
     }

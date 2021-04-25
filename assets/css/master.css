@@ -309,11 +309,20 @@ h4 {
   text-decoration: none;
   color: #ffffff;
 }
+#navbar .container .content-navbar .menu-navbar .content-menu-navbar ul li a:hover {
+  color: #40c4ff;
+  cursor: pointer;
+  font-weight: 600;
+}
 #navbar .container .content-navbar .icon-navbar .content-icon-navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+}
+#navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i:hover {
+  color: #40c4ff;
+  cursor: pointer;
 }
 #navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i {
   color: white;
@@ -393,6 +402,10 @@ h4 {
 #courses .container .content-courses .card-courses img {
   width: 80px;
 }
+#courses .container .content-courses .card-courses img:hover {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
 #courses .container .content-courses .card-courses h3 {
   color: #303030;
   padding-top: 20px;
@@ -405,6 +418,10 @@ h4 {
   text-transform: uppercase;
   color: #40c4ff;
   font-weight: 600;
+}
+#tutoring .container .content-tutoring .text-tutoring p.more:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 #tutoring .container .content-tutoring .img-tutoring img {
   width: 100%;
@@ -511,6 +528,10 @@ h4 {
   color: #847b7b;
   font-size: 16px;
   font-weight: 600;
+}
+#possibilities .container .content-possibilities .course-possibilities .content-course ul li:hover {
+  color: #40c4ff;
+  cursor: pointer;
 }
 #possibilities .container .content-possibilities .course-possibilities .content-course ul li.active {
   border-left: 7px solid #40c4ff;
@@ -708,6 +729,12 @@ h4 {
   background-color: #ffffff;
   border: 2px solid #eaebeb;
 }
+#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td button:hover {
+  color: white;
+  background-color: #40c4ff;
+  border: 2px solid #40c4ff;
+  cursor: pointer;
+}
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button:first-child {
   visibility: hidden;
   background-color: transparent;
@@ -722,11 +749,6 @@ h4 {
   font-weight: 600;
   letter-spacing: 1px;
 }
-#pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button.button:nth-child(3) button {
-  color: #ffffff;
-  background-color: #40c4ff;
-  border: 2px solid #40c4ff;
-}
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
   color: #40c4ff;
 }
@@ -738,6 +760,10 @@ h4 {
 }
 #partners .container .content-partners .img-partners img {
   width: 200px;
+}
+#partners .container .content-partners .img-partners img:hover {
+  width: 205px;
+  cursor: pointer;
 }
 
 footer #footer .container.background {
@@ -795,6 +821,10 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   vertical-align: middle;
   padding-right: 10px;
 }
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(2):hover {
+  color: #40c4ff;
+  cursor: pointer;
+}
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3) {
   font-size: 13px;
   color: #ffffff;
@@ -809,11 +839,19 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   vertical-align: middle;
   padding-right: 10px;
 }
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3):hover {
+  color: #40c4ff;
+  cursor: pointer;
+}
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType {
   font-size: 15px;
   color: #cecece;
   font-family: "Merriweather", serif;
   font-size: 700;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType:hover {
+  color: #40c4ff;
+  cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondAuthor {
   font-size: 13px;
@@ -831,6 +869,10 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetThird a {
   text-decoration: none;
   color: #cecece;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetThird a:hover {
+  color: #40c4ff;
+  cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFourth img {
   width: 200px;
@@ -859,6 +901,10 @@ footer #footer .container .content-footer .copyright-menu .content-copyright-men
   text-decoration: none;
   color: #959595;
 }
+footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu span a:hover {
+  color: #40c4ff;
+  cursor: pointer;
+}
 footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu ul {
   list-style: none;
   display: flex;
@@ -869,6 +915,10 @@ footer #footer .container .content-footer .copyright-menu .content-copyright-men
   padding-right: 20px;
   color: #959595;
   font-size: 13px;
+}
+footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu ul li a i:hover {
+  color: #40c4ff;
+  cursor: pointer;
 }
 footer #footer .container .pointer-up .content-pointer-up {
   position: fixed;

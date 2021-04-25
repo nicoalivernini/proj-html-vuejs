@@ -46,6 +46,10 @@ footer {
                             &:before {
                               @include telephone;
                             }
+                            &:hover{
+                              color: $celeste-button;
+                              cursor: pointer;
+                            }
                           }
                           &:nth-child(3) {
                             font-size: 13px;
@@ -55,6 +59,10 @@ footer {
                             &:before {
                               @include time;
                             }
+                            &:hover{
+                              color: $celeste-button;
+                              cursor: pointer;
+                            }
                           }
                         }
                         &.widgetSecondType {
@@ -62,6 +70,10 @@ footer {
                           color: $widgetSecond-title;
                           font-family: 'Merriweather', serif;
                           font-size: 700;
+                          &:hover {
+                            color: $celeste-button;
+                            cursor: pointer;
+                          }
                         }
                         &.widgetSecondAuthor {
                           font-size: 13px;
@@ -78,6 +90,10 @@ footer {
                           & a{
                             text-decoration: none;
                             color: $widgetSecond-title;
+                            &:hover {
+                              color: $celeste-button;
+                              cursor: pointer;
+                            }
                           }
                         }
                         &.widgetFourth {
@@ -112,6 +128,10 @@ footer {
                 a {
                   text-decoration: none;
                   color: $copyright-footer;
+                  &:hover {
+                    color: $celeste-button;
+                    cursor: pointer;
+                  }
                 }
               }
               ul {
@@ -123,6 +143,10 @@ footer {
                       padding-right: 20px;
                       color: $copyright-footer;
                       font-size: 13px;
+                      &:hover {
+                        color: $celeste-button;
+                        cursor: pointer;
+                      }
                     }
                   }
                 }
@@ -138,7 +162,6 @@ footer {
           right: 0;
           background-color: $celeste-button;
           padding: 10px 15px;
-
           & a {
             @include flex-column-center-center;
             text-decoration: none;
