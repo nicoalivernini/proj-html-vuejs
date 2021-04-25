@@ -199,29 +199,84 @@ var app = new Vue({
       img: '4'
     }],
     //Chiusura Partners
-    menuFooter: [{
-      widgetContact: [{
-        title: 'Prova',
-        // img: '',
-        description: 'Providing Life Changing',
-        experience: 'Experiences Through',
-        education: 'Education. Class That Fit your',
-        life: 'Busy Life. Closer to Home'
-      }]
+    widgetFirst: [{
+      title: 'Prova',
+      // img: '',
+      description: 'Providing Life Changing'
     }, {
-      widgetPopularCourses: [{
-        title: 'Popular Courses'
-      }]
+      description: 'Experiences Through'
     }, {
-      widgetSupport: [{
-        title: 'Support'
-      }]
+      description: 'Education. Class That Fit your'
     }, {
-      widgetLearning: [{
-        title: 'Flexible Learning' //img: '';
-
-      }]
-    }] //Chiusura Menu Footer
+      description: 'Busy Life. Closer to Home'
+    }, {
+      description: '1-677-124-44227'
+    }, {
+      description: 'Mon-Sat 8.00 - 18.00'
+    }],
+    //Chiusura Widget First
+    widgetSecond: [{
+      title: 'Popular Courses'
+    }, {
+      type: 'Business English',
+      author: 'Preston Marshall'
+    }, {
+      type: 'Social Computing',
+      author: 'David Sanders'
+    }, {
+      type: 'Learn Spanish',
+      author: 'Jennie King'
+    }],
+    //Chiusura Widget Second
+    widgetThird: [{
+      title: 'Support'
+    }, {
+      menu: 'User dashboard',
+      link: '#'
+    }, {
+      menu: 'Contact Us',
+      link: '#'
+    }, {
+      menu: 'FAQ',
+      link: '#'
+    }, {
+      menu: 'Course Offer',
+      link: '#'
+    }, {
+      menu: 'Events',
+      link: '#'
+    }],
+    //Chiusura Widget Third
+    widgetFourthImgBase: 'assets/img/footer-img-1.png',
+    widgetFourth: [{
+      title: 'Flexible Learning'
+    }],
+    // Chiusura Widget Fourth
+    widgetCopyRight: [{
+      title: 'Copyrights 2017'
+    }, {
+      title: '© Mikado Themes'
+    }],
+    //  Chiusura widgetCopyRight
+    widgetCopyLeft: [{
+      title: 'Call +44 300 303 0266',
+      link: '#'
+    }, {
+      title: 'Follow Us',
+      link: ''
+    }],
+    //  Chiusura widgetCopyRight
+    iconSocialFooterImgBase: 'fab fa-',
+    iconSocialFooter: [{
+      title: 'facebook-f',
+      link: '#'
+    }, {
+      title: 'instagram',
+      link: '#'
+    }, {
+      title: 'twitter',
+      link: '#'
+    }] //Chiusura Icon Social Footer
 
   },
   //Chiusura Data

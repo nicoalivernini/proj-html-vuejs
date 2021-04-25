@@ -5,13 +5,106 @@ footer {
         background-color: $background-footer;
       }
       .content-footer {
-
-        padding: 120px 10% 70px;
+        padding: 120px 5% 70px;
         .menu-footer {
+          color: $white;
+          padding-bottom: 70px;
           .content-footer-menu {
             display: flex;
             .column-menu {
               width: 25%;
+              .content-column-menu {
+                ul {
+                  list-style: none;
+                  li {
+                    color: $title-footer;
+                    font-size: 22px;
+                    font-family: 'Merriweather', serif;
+                    font-weight: 700;
+                    img {
+                      width: 120px;
+                      padding-bottom: 30px;
+                    }
+                    ul {
+                      &:first-child {
+                        padding-top: 30px;
+                      }
+                      li {
+                        &.widgetFirst {
+                          font-size: 15px;
+                          font-weight: 300;
+                          font-family: 'Open Sans', sans-serif;
+                          &:nth-child(4) {
+                            margin-bottom: 25px;
+                          }
+                          &:nth-child(5) {
+                            font-size: 13px;
+                            color: $white;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            &:before {
+                              @include telephone;
+                            }
+                          }
+                          &:nth-child(6) {
+                            font-size: 13px;
+                            color: $white;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            &:before {
+                              @include time;
+                            }
+                          }
+                        }
+                        &.widgetSecondType {
+                          font-size: 15px;
+                          color: $widgetSecond-title;
+                          font-family: 'Merriweather', serif;
+                          font-size: 700;
+                        }
+                        &.widgetSecondAuthor {
+                          font-size: 13px;
+                          font-family: 'Open Sans', sans-serif;
+                          color: $icon-color-courses;
+                          font-weight: 600;
+                          margin-bottom: 20px;
+                        }
+                        &.widgetThird {
+                          font-size: 15px;
+                          font-family: 'Open Sans', sans-serif;
+                          padding-bottom: 10px;
+                          & a{
+                            text-decoration: none;
+                            color: $widgetSecond-title;
+                          }
+                        }
+                        &.widgetFourth {
+                          img {
+                            width: 200px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .copyright-menu {
+          .content-copyright-menu {
+            .right-copyright-menu {
+              span {
+                font-size: 15px;
+              }
+            }
+            .left-copyright-menu {
+              span {
+
+              }
+              i {
+
+              }
             }
           }
         }

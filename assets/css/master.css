@@ -721,11 +721,95 @@ footer #footer .container.background {
   background-color: #222222;
 }
 footer #footer .container .content-footer {
-  padding: 120px 10% 70px;
+  padding: 120px 5% 70px;
+}
+footer #footer .container .content-footer .menu-footer {
+  color: #ffffff;
+  padding-bottom: 70px;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu {
   display: flex;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu {
   width: 25%;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul {
+  list-style: none;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li {
+  color: #fbfbfc;
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li img {
+  width: 120px;
+  padding-bottom: 30px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul:first-child {
+  padding-top: 30px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(4) {
+  margin-bottom: 25px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(5) {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(5):before {
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #b9b9b9;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(6) {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(6):before {
+  content: "";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #b9b9b9;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType {
+  font-size: 15px;
+  color: #cecece;
+  font-family: "Merriweather", serif;
+  font-size: 700;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondAuthor {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #b9b9b9;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetThird {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 10px;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetThird a {
+  text-decoration: none;
+  color: #cecece;
+}
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFourth img {
+  width: 200px;
+}
+footer #footer .container .content-footer .copyright-menu .content-copyright-menu .right-copyright-menu span {
+  font-size: 15px;
 }

@@ -272,17 +272,63 @@
           <div class="content-footer">
             <div class="menu-footer">
               <div class="content-footer-menu">
-                <div class="column-menu" v-for="(menu, i) in menuFooter">
-                <ul>
-                  <li></li>
-                </ul>
-
+                <div class="column-menu">
+                  <div class="content-column-menu">
+                    <ul>
+                      <li><img src="assets/img/logo-light.png" alt="">
+                        <ul>
+                          <li class="widgetFirst" v-for="(data, i) in widgetFirst">{{ data.description }}</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="column-menu">
+                  <div class="content-column-menu">
+                    <ul>
+                      <li>{{ widgetSecond[0].title}}
+                        <ul v-for="data in widgetSecond">
+                          <li class="widgetSecondType" v-if="data.type">{{ data.type }}</li>
+                          <li class="widgetSecondAuthor" v-if="data.author">{{ data.author }}</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="column-menu">
+                  <div class="content-column-menu">
+                    <ul>
+                      <li>{{ widgetThird[0].title}}
+                        <ul>
+                          <li class="widgetThird" v-if="data.menu" v-for="(data, i) in widgetThird"><a :href=`${data.link}`>{{ data.menu }}</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="column-menu">
+                  <div class="content-column-menu">
+                    <ul>
+                      <li>{{ widgetFourth[0].title}}
+                        <ul>
+                          <li class="widgetFourth"><img :src="widgetFourthImgBase" alt=""></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+            <hr>
             <div class="copyright-menu">
               <div class="content-copyright-menu">
-
+                <div class="right-copyright-menu">
+                  <span v-for="data in widgetCopyRight">{{ data.title }}</span>
+                </div>
+                <div class="left-copyright-menu">
+                  <span v-for="data in widgetCopyLeft"><a :href=`${data.link}`>{{ data.title }}</a></span>
+                  <i v-for="data in iconSocialFooter" :class="iconSocialFooterImgBase + `${data.title}`"><a :href=`${data.link}`></a></i>
+                </div>
               </div>
             </div>
           </div>

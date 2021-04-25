@@ -80,3 +80,21 @@
   padding-right: 5px;
   padding-left: 10px;
 }
+
+@mixin telephone {
+  content: '\f879';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $icon-color-courses;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+@mixin time {
+  content: '\f017';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $icon-color-courses;
+  vertical-align: middle;
+  padding-right: 10px;
+}
