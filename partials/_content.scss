@@ -136,6 +136,9 @@
             color: rgba(255, 255, 255, 0.5);
             padding: 0 6px;
             font-size: 12px;
+            &:hover {
+              cursor: pointer;
+            }
             &.active {
               color: $white;
             }

@@ -369,7 +369,7 @@ var app = new Vue({
 
     setInterval(function () {
       _this.next();
-    }, 3000);
+    }, 4000);
   },
   //Chiusura Created
   methods: {
@@ -385,6 +385,9 @@ var app = new Vue({
     active: function active(index) {
       this.index = index;
       console.log(index);
+    },
+    activeReview: function activeReview(index) {
+      this.index = index;
     },
     selezione: function selezione(index) {
       this.indexPossibilities = index;

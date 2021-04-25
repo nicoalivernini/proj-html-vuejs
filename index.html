@@ -53,7 +53,7 @@
               <button class="mt-50" @click="next">{{ jumboSlide[index].button }}</button>
             </div>
             <div class="icon-jumbo txt-center">
-              <i class="fas fa-circle" v-for="(slide, i) in jumboSlide" :class="(i == index ) ? 'active' : '' " @click='active(dot-1)'></i>
+              <i class="fas fa-circle" v-for="(slide, i) in jumboSlide" :class="(i == index ) ? 'active' : '' " @click='active(i)'></i>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
               <p>{{ review[index].type }}</p>
             </div>
             <div class="icon-card">
-              <i class="fas fa-circle" v-for="(data, i) in review" :class="(i == index ) ? 'active' : '' "></i>
+              <i class="fas fa-circle" v-for="(data, i) in review" :class="(i == index ) ? 'active' : '' " @click='active(i)'></i>
             </div>
           </div>
         </div>

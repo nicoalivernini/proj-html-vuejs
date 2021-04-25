@@ -403,6 +403,7 @@ h4 {
   font-family: "Font Awesome 5 Free";
   vertical-align: middle;
   color: #ffffff;
+  cursor: pointer;
 }
 
 #courses .container .content-courses {
@@ -525,6 +526,9 @@ h4 {
   color: rgba(255, 255, 255, 0.5);
   padding: 0 6px;
   font-size: 12px;
+}
+#review .container .content-review .card-review .icon-card i:hover {
+  cursor: pointer;
 }
 #review .container .content-review .card-review .icon-card i.active {
   color: #ffffff;

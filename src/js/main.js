@@ -458,7 +458,7 @@ var app = new Vue ({
   created () {
     setInterval(() =>{
       this.next();
-    }, 3000);
+    }, 4000);
   }, //Chiusura Created
 
   methods: {
@@ -474,6 +474,10 @@ var app = new Vue ({
     active: function (index) {
       this.index = index;
       console.log(index);
+    },
+
+    activeReview: function (index) {
+      this.index = index;
     },
 
     selezione: function (index) {
