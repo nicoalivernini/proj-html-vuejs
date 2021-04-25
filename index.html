@@ -45,7 +45,7 @@
     <section id="jumbo">
       <div class="container fluid">
         <div class="content-jumbo">
-          <div class="card-jumbo background">
+          <div class="card-jumbo background" :style="{ backgroundImage: `url(${jumboSlide[index].img})` }">
             <div class="text-jumbo txt-center">
               <h2>{{ jumboSlide[index].title }}</h2>
               <p class="mt-50">{{ jumboSlide[index].text }}</p>

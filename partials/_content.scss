@@ -199,6 +199,7 @@
             }
           }
           .img-benefit {
+            text-align: center;
             img {
               width: 60%;
               max-width: 80%;
@@ -238,8 +239,12 @@
             background-color: $white;
             border: 1px solid #f2f2f2;
             .img-card {
+              overflow: hidden;
               img {
                 width: 100%;
+                &:hover {
+                  transform: scale(1.1);
+                }
               }
             }
             .text-card {
@@ -251,11 +256,19 @@
                     font-family: 'Merriweather', serif;
                     color: $title-gray;
                     font-size: 15px;
+                    &:hover {
+                      color: $celeste-button;
+                      cursor: pointer;
+                    }
                   }
                   p {
                     font-size: 14px;
                     font-weight: 600;
                     color: #b9b9b9;
+                    &:hover {
+                      color: $celeste-button;
+                      cursor: pointer;
+                    }
                   }
                 }
                 .price-text {
@@ -284,6 +297,10 @@
                   font-weight: 600;
                   vertical-align: middle;
                   font-size: 11px;
+                  &:hover {
+                    color: $celeste-button;
+                    cursor: pointer;
+                  }
                   &:first-child:before {
                     @include user;
                   }
@@ -345,6 +362,10 @@
                   background-color: $celeste-back-table;
                   border: 1px solid $border-gray-table;
                   border-top: 4px solid #d6f2ff;
+                  &:hover {
+                    border-top: 4px solid $celeste-button;
+                    cursor: pointer;
+                  }
                   &:first-child {
                     padding: 0px 15px 0px 25px;
                     background-color: $white;
@@ -353,9 +374,9 @@
                       padding-top: 100px;
                     }
                   }
-                  &:nth-child(3) {
-                    border-top: 4px solid #40c4ff;
-                  }
+                  // &:nth-child(3) {
+                  //   border-top: 4px solid $celeste-button;
+                  // }
                   img{
                     padding-bottom: 10px;
                   }

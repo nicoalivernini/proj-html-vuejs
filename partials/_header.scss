@@ -13,6 +13,9 @@
           img {
             height: 32px;
             max-height: 70px;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -86,7 +89,6 @@
       .card-jumbo {
         position: relative;
         &.background {
-          background-image: url('../img/h5-slide-3-background.jpg');
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -121,16 +123,22 @@
             font-weight: 600;
             font-size: 15px;
             margin-bottom: 150px;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.05);
+
+            }
           }
         }
         .icon-jumbo {
           padding-bottom: 30px;
           i {
+            font-size: 13px;
             padding: 0 5px;
-            color: rgba(255, 255, 255, 0.5);
-            @include dotJumbo;
-            &.active {
+            color: rgba(255, 255, 255, 0.3);
 
+            &.active:before {
+             @include dotJumbo;
             }
           }
         }

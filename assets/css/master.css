@@ -295,6 +295,9 @@ h4 {
   height: 32px;
   max-height: 70px;
 }
+#navbar .container .content-navbar .logo-navbar .content-logo-navbar img:hover {
+  cursor: pointer;
+}
 #navbar .container .content-navbar .menu-navbar .content-menu-navbar ul {
   list-style: none;
   display: flex;
@@ -310,7 +313,7 @@ h4 {
   color: #ffffff;
 }
 #navbar .container .content-navbar .menu-navbar .content-menu-navbar ul li a:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
   font-weight: 600;
 }
@@ -321,7 +324,7 @@ h4 {
   list-style: none;
 }
 #navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 #navbar .container .content-navbar .icon-navbar .content-icon-navbar ul li a i {
@@ -335,7 +338,6 @@ h4 {
   position: relative;
 }
 #jumbo .container .content-jumbo .card-jumbo.background {
-  background-image: url("../img/h5-slide-3-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -363,7 +365,7 @@ h4 {
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo button {
   color: #ffffff;
-  background-color: #40c4ff;
+  background-color: #045d8c;
   border: none;
   padding: 17px 30px;
   text-transform: uppercase;
@@ -372,19 +374,26 @@ h4 {
   font-size: 15px;
   margin-bottom: 150px;
 }
+#jumbo .container .content-jumbo .card-jumbo .text-jumbo button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 #jumbo .container .content-jumbo .card-jumbo .icon-jumbo {
   padding-bottom: 30px;
 }
 #jumbo .container .content-jumbo .card-jumbo .icon-jumbo i {
+  font-size: 13px;
   padding: 0 5px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
+}
+#jumbo .container .content-jumbo .card-jumbo .icon-jumbo i.active:before {
   content: "";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
-  color: #b9b9b9;
   vertical-align: middle;
   color: #ffffff;
 }
+
 #courses .container .content-courses {
   display: flex;
   justify-content: space-between;
@@ -416,7 +425,7 @@ h4 {
 
 #tutoring .container .content-tutoring .text-tutoring p.more {
   text-transform: uppercase;
-  color: #40c4ff;
+  color: #045d8c;
   font-weight: 600;
 }
 #tutoring .container .content-tutoring .text-tutoring p.more:hover {
@@ -450,7 +459,7 @@ h4 {
   align-items: center;
 }
 #world .container .content-world .text-world .data-world .data-content-world p {
-  color: #40c4ff;
+  color: #045d8c;
   font-family: "Merriweather", serif;
   padding-top: 10px;
 }
@@ -530,13 +539,13 @@ h4 {
   font-weight: 600;
 }
 #possibilities .container .content-possibilities .course-possibilities .content-course ul li:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 #possibilities .container .content-possibilities .course-possibilities .content-course ul li.active {
-  border-left: 7px solid #40c4ff;
+  border-left: 7px solid #045d8c;
   background-color: #fcfcfc;
-  color: #40c4ff;
+  color: #045d8c;
 }
 #possibilities .container .content-possibilities .description-course {
   width: 60%;
@@ -559,9 +568,12 @@ h4 {
   content: "";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
-  color: #40c4ff;
+  color: #045d8c;
   vertical-align: middle;
   padding-right: 10px;
+}
+#possibilities .container .content-possibilities .description-course .benefit-course .img-benefit {
+  text-align: center;
 }
 #possibilities .container .content-possibilities .description-course .benefit-course .img-benefit img {
   width: 60%;
@@ -591,8 +603,14 @@ h4 {
   background-color: #ffffff;
   border: 1px solid #f2f2f2;
 }
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .img-card {
+  overflow: hidden;
+}
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .img-card img {
   width: 100%;
+}
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .img-card img:hover {
+  transform: scale(1.1);
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card {
   padding: 25px 20px 25px;
@@ -607,10 +625,18 @@ h4 {
   color: #303030;
   font-size: 15px;
 }
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .title-text h6:hover {
+  color: #045d8c;
+  cursor: pointer;
+}
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .title-text p {
   font-size: 14px;
   font-weight: 600;
   color: #b9b9b9;
+}
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .title-text p:hover {
+  color: #045d8c;
+  cursor: pointer;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .header-text .price-text span {
   background-color: #ffd740;
@@ -633,6 +659,10 @@ h4 {
   vertical-align: middle;
   font-size: 11px;
 }
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:hover {
+  color: #045d8c;
+  cursor: pointer;
+}
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:first-child:before {
   content: "";
   font-weight: 900;
@@ -652,11 +682,11 @@ h4 {
 }
 #online-courses .container .content-online-courses .icon-card .content-icon-card i {
   font-size: 12px;
-  color: #40c4ff;
+  color: #045d8c;
   opacity: 0.5;
 }
 #online-courses .container .content-online-courses .icon-card .content-icon-card i:nth-child(2) {
-  color: #40c4ff;
+  color: #045d8c;
   opacity: 1;
 }
 
@@ -681,6 +711,10 @@ h4 {
   border: 1px solid #efefef;
   border-top: 4px solid #d6f2ff;
 }
+#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th:hover {
+  border-top: 4px solid #045d8c;
+  cursor: pointer;
+}
 #pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th:first-child {
   padding: 0px 15px 0px 25px;
   background-color: #ffffff;
@@ -688,9 +722,6 @@ h4 {
 #pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th:first-child h5 {
   font-size: 23px;
   padding-top: 100px;
-}
-#pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th:nth-child(3) {
-  border-top: 4px solid #40c4ff;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table thead tr th img {
   padding-bottom: 10px;
@@ -731,8 +762,8 @@ h4 {
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td button:hover {
   color: white;
-  background-color: #40c4ff;
-  border: 2px solid #40c4ff;
+  background-color: #045d8c;
+  border: 2px solid #045d8c;
   cursor: pointer;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button:first-child {
@@ -750,7 +781,7 @@ h4 {
   letter-spacing: 1px;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td i.fa-check {
-  color: #40c4ff;
+  color: #045d8c;
 }
 
 #partners .container .content-partners {
@@ -822,7 +853,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   padding-right: 10px;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(2):hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3) {
@@ -840,7 +871,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   padding-right: 10px;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3):hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType {
@@ -850,7 +881,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   font-size: 700;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondAuthor {
@@ -871,7 +902,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   color: #cecece;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetThird a:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFourth img {
@@ -902,7 +933,7 @@ footer #footer .container .content-footer .copyright-menu .content-copyright-men
   color: #959595;
 }
 footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu span a:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu ul {
@@ -917,14 +948,14 @@ footer #footer .container .content-footer .copyright-menu .content-copyright-men
   font-size: 13px;
 }
 footer #footer .container .content-footer .copyright-menu .content-copyright-menu .left-copyright-menu ul li a i:hover {
-  color: #40c4ff;
+  color: #045d8c;
   cursor: pointer;
 }
 footer #footer .container .pointer-up .content-pointer-up {
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #40c4ff;
+  background-color: #045d8c;
   padding: 10px 15px;
 }
 footer #footer .container .pointer-up .content-pointer-up a {

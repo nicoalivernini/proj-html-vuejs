@@ -45,22 +45,21 @@ var app = new Vue ({
       },
     ], //Chiusura Icon Navbar
     index: '0',
-    slideImgBase: 'assets/img/h5-slide-',
     jumboSlide: [
       {
-        img: '3',
+        img: 'assets/img/h5-slide-3-background.jpg',
         title: 'Contemporary Ideas',
         text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
         button: 'Register now'
       },
       {
-        img: '2',
+        img: 'assets/img/h5-slide-2-background.jpg',
         title: 'Increase your knowledge',
         text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
         button: 'Search now'
       },
       {
-        img: '1',
+        img: 'assets/img/h5-slide-1-background.jpg',
         title: 'Boost Your Career',
         text: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris.',
         button: 'Contact now'
