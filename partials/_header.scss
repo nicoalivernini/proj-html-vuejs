@@ -10,11 +10,13 @@
       @include flex-space-between-center;
       .logo-navbar {
         .content-logo-navbar{
-          img {
-            height: 32px;
-            max-height: 70px;
-            &:hover {
-              cursor: pointer;
+          a {
+            img {
+              height: 32px;
+              max-height: 70px;
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }
@@ -43,6 +45,7 @@
       .icon-navbar {
         .content-icon-navbar {
           ul {
+            position: relative;
             @include flex-center;
             list-style: none;
             li {
@@ -54,27 +57,21 @@
                   }
                 }
               }
-              &:nth-child(2) {
-                a {
-                  i {
-                    &.fa-shopping-bag {
-                    // position: absolute;
-                    // top: 50%;
-                    // width: 15px;
-                    // height: 15px;
-                    // border-radius: 50%;
-                    // color: $white;
-                    // background-color: $celeste-button;
-                    // z-index: 3;
-                  }
-                }
-              }
-            }
               a {
                 i {
                   color: white;
                 }
               }
+            }
+            .counter {
+              position: absolute;
+              left: 50%;
+              bottom: 45%;
+              background-color: $celeste-button;
+              padding: 2px 5px;
+              border-radius: 50%;
+              font-size: 9px;
+              color: $white;
             }
           }
         }

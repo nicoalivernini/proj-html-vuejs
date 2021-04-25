@@ -296,7 +296,7 @@ var app = new Vue({
     }, {
       description: '1-677-124-44227'
     }, {
-      description: 'Mon-Sat 8.00 - 18.00'
+      description: 'Mon - Sat 8.00 - 18.00'
     }],
     //Chiusura Widget First
     widgetSecond: [{

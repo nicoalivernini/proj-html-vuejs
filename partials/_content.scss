@@ -235,6 +235,19 @@
         @include flex-space-between-center;
         .card-online-courses {
           width: calc(100% / 3 - 30px);
+          &:nth-child(3) {
+            .content-card-online {
+              .text-card {
+                .header-text {
+                  .price-text {
+                    span {
+                      background-color: $celeste-button;
+                    }
+                  }
+                }
+              }
+            }
+          }
           .content-card-online {
             background-color: $white;
             border: 1px solid #f2f2f2;
@@ -306,7 +319,6 @@
                   }
                   &:last-child:before {
                     @include tag;
-
                   }
                 }
               }

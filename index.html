@@ -18,7 +18,7 @@
         <div class="content-navbar">
           <div class="logo-navbar">
             <div class="content-logo-navbar">
-              <img src="assets/img/logo-light.png" alt="Logo iAcademy">
+              <a href="#"><img src="assets/img/logo-light.png" alt="Logo iAcademy"></a>
             </div>
           </div>
           <div class="menu-navbar">
@@ -36,6 +36,7 @@
                 <li v-for="icon in iconNavbar" class="plr-10">
                   <a :href=`${icon.link}`><i :class="'fas fa-' + `${icon.name}`"></i></a>
                 </li>
+                <span class="counter">0</span>
               </ul>
             </div>
           </div>
@@ -334,6 +335,16 @@
               <a href="#">
                 <i class="fas fa-chevron-up"></i>
                 <span>top</span>
+              </a>
+            </div>
+            <div class="content-shopping-bag">
+              <a href="">
+                <img src="assets/svg/svg-2.svg" alt="">
+              </a>
+            </div>
+            <div class="content-circle-logo">
+              <a href="">
+                <img src="assets/svg/svg-3.svg" alt="">
               </a>
             </div>
           </div>
