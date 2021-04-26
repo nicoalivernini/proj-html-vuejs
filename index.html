@@ -64,8 +64,10 @@
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
             <div class="content-card-courses">
-              <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="Course">
-              <h3>{{ course.title }}</h3>
+              <a :href=`${course.link}`>
+                <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="Course">
+                <h3>{{ course.title }}</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -75,11 +77,11 @@
       <div class="container">
         <div class="content-tutoring">
           <div class="text-tutoring">
-            <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
+            <h4>The Trusted Name <br> for In-Home-Tutoring.</h4>
             <p class="subtitle">Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin,
                lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
                odio sit amet nibcursus a sit amet mauris.</p>
-            <span class="more">Learn more</span>
+            <a href="#"><span class="more">Learn more</span></a>
           </div>
           <div class="img-tutoring mt-30">
             <img src="assets/img/h5-img-1.jpg" alt="Young People">
@@ -95,7 +97,7 @@
           </div>
           <div class="text-world">
             <h4>Empowering <br> Children to Reach Their Potential</h4>
-            <p class="subtitle">Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin,
+            <p class="subtitle">Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,
                lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
                odio sit amet nibcursus a sit amet mauris.</p>
             <div class="data-world">
@@ -170,13 +172,13 @@
             <div class="card-online-courses" v-for="course in onlineCourses">
               <div class="content-card-online">
                 <div class="img-card">
-                  <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="Online Course">
+                  <a :href=`${course.link}`><img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="Online Course"></a>
                 </div>
                 <div class="text-card">
                   <div class="header-text">
                     <div class="title-text">
-                      <h6>{{ course.title }}</h6>
-                      <p class="ptb-5-10">{{ course.author }}</p>
+                      <a :href=`${course.link}`><h6>{{ course.title }}</h6></a>
+                      <a :href=`${course.link}`><p class="ptb-5-10">{{ course.author }}</p></a>
                     </div>
                     <div class="price-text">
                       <span>{{ course.price }}</span>
@@ -259,7 +261,7 @@
       <div class="container">
         <div class="content-partners">
           <div class="img-partners" v-for="partner in partners">
-            <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="Partner">
+            <a :href=`${partner.link}`><img :src="partnersImgBase + `${partner.img}` + '.png'" alt="Partner"></a>
           </div>
         </div>
       </div>
@@ -286,7 +288,7 @@
                     <ul>
                       <li>{{ widgetSecond[0].title }}
                         <ul v-for="data in widgetSecond">
-                          <li class="widgetSecondType" v-if="data.type">{{ data.type }}</li>
+                          <li class="widgetSecondType" v-if="data.type"><a href="">{{ data.type }}</a></li>
                           <li class="widgetSecondAuthor" v-if="data.author">{{ data.author }}</li>
                         </ul>
                       </li>

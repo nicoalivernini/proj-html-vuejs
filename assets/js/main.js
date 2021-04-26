@@ -62,17 +62,23 @@ var app = new Vue({
     //Chiusura Jumbo Slide
     coursesImgBase: 'assets/img/h5-custom-icon-',
     courses: [{
-      title: 'Languages'
+      title: 'Languages',
+      link: '#'
     }, {
-      title: 'Software'
+      title: 'Software',
+      link: '#'
     }, {
-      title: 'Business'
+      title: 'Business',
+      link: '#'
     }, {
-      title: 'Chemistry'
+      title: 'Chemistry',
+      link: '#'
     }, {
-      title: 'Science'
+      title: 'Science',
+      link: '#'
     }, {
-      title: 'DIY&Craft'
+      title: 'DIY&Craft',
+      link: '#'
     }],
     //Chiusura Courses
     dataWorld: [{
@@ -189,7 +195,8 @@ var app = new Vue({
       price: 'free',
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
-      tag: 'Programming'
+      tag: 'Programming',
+      link: '#'
     }, {
       img: 6,
       title: 'Web Designing',
@@ -197,7 +204,8 @@ var app = new Vue({
       price: 'free',
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
-      tag: 'Programming'
+      tag: 'Programming',
+      link: '#'
     }, {
       img: 12,
       title: 'Financial Modeling',
@@ -205,7 +213,8 @@ var app = new Vue({
       price: '$20',
       description: 'Lorem ipsum dolor sit amet, te eros consulatu pro, quem labores petentium no sea, atqui posidonium interpretaris.',
       people: '1',
-      tag: 'Business'
+      tag: 'Business',
+      link: '#'
     } // {
     //   img: 2,
     //   title: 'Speed Reading',
@@ -280,13 +289,17 @@ var app = new Vue({
     //Chiusura Date Table
     partnersImgBase: 'assets/img/h5-client-',
     partners: [{
-      img: '5'
+      img: '5',
+      link: '#'
     }, {
-      img: '1'
+      img: '1',
+      link: '#'
     }, {
-      img: '2'
+      img: '2',
+      link: '#'
     }, {
-      img: '4'
+      img: '4',
+      link: '#'
     }],
     //Chiusura Partners
     widgetFirst: [{
@@ -355,7 +368,7 @@ var app = new Vue({
       link: 'tel:#'
     }, {
       title: 'Follow Us',
-      link: ''
+      link: '#'
     }],
     //  Chiusura widgetCopyRight
     iconSocialFooterImgBase: 'fab fa-',

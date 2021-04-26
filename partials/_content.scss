@@ -8,19 +8,22 @@
           @include flex-column-center-center;
           background-color: #f2f8fc;
           padding: 40px;
-          img {
-            width: 65px;
-            &:hover {
-              transform: translateY(-10px);
-              cursor: pointer;
+          a {
+            text-decoration: none;
+            img {
+              width: 65px;
+              &:hover {
+                transform: translateY(-10px);
+                cursor: pointer;
+              }
             }
-          }
-          h3 {
-            color: $title-gray;
-            padding-top: 20px;
-            font-family: 'Merriweather', serif;
-            font-size: 15px;
-            font-weight: 700;
+            h3 {
+              color: $title-gray;
+              padding-top: 20px;
+              font-family: 'Merriweather', serif;
+              font-size: 15px;
+              font-weight: 700;
+            }
           }
         }
       }
@@ -35,15 +38,18 @@
         }
         p {
         }
-        span {
-          &.more {
-            text-transform: uppercase;
-            color: $celeste-button;
-            font-weight: 700;
-            font-size: 14px;
-            &:hover {
-              text-decoration: underline;
-              cursor: pointer;
+        a {
+          text-decoration: none;
+          span {
+            &.more {
+              text-transform: uppercase;
+              color: $celeste-button;
+              font-weight: 700;
+              font-size: 14px;
+              &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -277,24 +283,28 @@
               .header-text {
                 @include flex-space-between-flex-start;
                 .title-text {
-                  h6 {
-                    font-family: 'Merriweather', serif;
-                    color: $title-gray;
-                    font-size: 15px;
-                    &:hover {
-                      color: $celeste-button;
-                      cursor: pointer;
+                  a {
+                    text-decoration: none;
+                    h6 {
+                      font-family: 'Merriweather', serif;
+                      color: $title-gray;
+                      font-size: 15px;
+                      &:hover {
+                        color: $celeste-button;
+                        cursor: pointer;
+                      }
+                    }
+                    p {
+                      font-size: 14px;
+                      font-weight: 600;
+                      color: #b9b9b9;
+                      &:hover {
+                        color: $celeste-button;
+                        cursor: pointer;
+                      }
                     }
                   }
-                  p {
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #b9b9b9;
-                    &:hover {
-                      color: $celeste-button;
-                      cursor: pointer;
-                    }
-                  }
+
                 }
                 .price-text {
                   span {
@@ -441,6 +451,7 @@
                     letter-spacing: .05em;
                     background-color: $white;
                     border: 2px solid #eaebeb;
+                    font-family: 'Open Sans', sans-serif;
                     &:hover {
                       color: white;
                       background-color: $celeste-button;
@@ -460,6 +471,7 @@
                       padding: 15px 30px;
                       font-weight: 600;
                       letter-spacing: 1px;
+                      font-size: 13px;
                     }
                   // &.button:nth-child(3) {
                   //   button {
@@ -488,11 +500,13 @@
     .content-partners {
       @include flex-space-around-center;
       .img-partners {
-        img {
-          width: 200px;
-          &:hover {
-            opacity: 0.5;
-            cursor: pointer;
+        a {
+          img {
+            width: 200px;
+            &:hover {
+              opacity: 0.5;
+              cursor: pointer;
+            }
           }
         }
       }
