@@ -12,10 +12,12 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1400px;
 }
 .container.fluid {
   width: 100%;
   margin: 0 auto;
+  max-width: none;
 }
 
 .txt-center {
@@ -29,15 +31,18 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 h4 {
   font-family: "Merriweather", serif;
   font-size: 38px;
   color: #303030;
-  font-weight: 500;
-  line-height: 45px;
+  font-weight: 600;
+  line-height: 50px;
+}
+h4.big {
+  font-size: 43px;
 }
 
 .pad-10 {
@@ -95,6 +100,21 @@ h4 {
 .ptb-150 {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.ptb-5-10 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.ptb-45-100 {
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+
+.ptb-140-100 {
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .plr-7 {
@@ -182,6 +202,10 @@ h4 {
   padding-bottom: 120px;
 }
 
+.pt-15 {
+  padding-top: 15px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -200,6 +224,10 @@ h4 {
 
 .pt-60 {
   padding-top: 60px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .mlr-5 {
@@ -229,6 +257,10 @@ h4 {
 
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-30 {
@@ -280,7 +312,9 @@ h4 {
   width: 100%;
   height: 75px;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -351,6 +385,7 @@ h4 {
 #jumbo .container .content-jumbo .card-jumbo.background {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #jumbo .container .content-jumbo .card-jumbo img {
   width: 100%;
@@ -378,12 +413,13 @@ h4 {
   color: #ffffff;
   background-color: #045d8c;
   border: none;
-  padding: 17px 30px;
+  padding: 20px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 150px;
+  font-family: "Open Sans", sans-serif;
 }
 #jumbo .container .content-jumbo .card-jumbo .text-jumbo button:hover {
   cursor: pointer;
@@ -393,9 +429,12 @@ h4 {
   padding-bottom: 30px;
 }
 #jumbo .container .content-jumbo .card-jumbo .icon-jumbo i {
-  font-size: 13px;
+  font-size: 15px;
   padding: 0 5px;
   color: rgba(255, 255, 255, 0.3);
+}
+#jumbo .container .content-jumbo .card-jumbo .icon-jumbo i:hover {
+  cursor: pointer;
 }
 #jumbo .container .content-jumbo .card-jumbo .icon-jumbo i.active:before {
   content: "";
@@ -403,7 +442,6 @@ h4 {
   font-family: "Font Awesome 5 Free";
   vertical-align: middle;
   color: #ffffff;
-  cursor: pointer;
 }
 
 #courses .container .content-courses {
@@ -413,21 +451,23 @@ h4 {
 }
 #courses .container .content-courses .card-courses {
   width: 15%;
-  background-color: #f2f8fc;
+}
+#courses .container .content-courses .card-courses .content-card-courses {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f2f8fc;
   padding: 40px;
 }
-#courses .container .content-courses .card-courses img {
-  width: 80px;
+#courses .container .content-courses .card-courses .content-card-courses img {
+  width: 65px;
 }
-#courses .container .content-courses .card-courses img:hover {
-  padding-bottom: 10px;
+#courses .container .content-courses .card-courses .content-card-courses img:hover {
+  transform: translateY(-10px);
   cursor: pointer;
 }
-#courses .container .content-courses .card-courses h3 {
+#courses .container .content-courses .card-courses .content-card-courses h3 {
   color: #303030;
   padding-top: 20px;
   font-family: "Merriweather", serif;
@@ -435,12 +475,13 @@ h4 {
   font-weight: 700;
 }
 
-#tutoring .container .content-tutoring .text-tutoring p.more {
+#tutoring .container .content-tutoring .text-tutoring span.more {
   text-transform: uppercase;
   color: #045d8c;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 14px;
 }
-#tutoring .container .content-tutoring .text-tutoring p.more:hover {
+#tutoring .container .content-tutoring .text-tutoring span.more:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -474,6 +515,8 @@ h4 {
   color: #045d8c;
   font-family: "Merriweather", serif;
   padding-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
 }
 #world .container .content-world .text-world .data-world .data-content-world p:first-child {
   font-size: 45px;
@@ -546,7 +589,7 @@ h4 {
   list-style: none;
 }
 #possibilities .container .content-possibilities .course-possibilities .content-course ul li {
-  padding: 25px 10px 25px 20px;
+  padding: 27px 10px 27px 20px;
   border: 1px solid #e5e5e5;
   font-family: "Merriweather", serif;
   color: #847b7b;
@@ -565,6 +608,15 @@ h4 {
 #possibilities .container .content-possibilities .description-course {
   width: 60%;
 }
+#possibilities .container .content-possibilities .description-course .content-description p.subtitle-possibilities {
+  margin: 0 auto;
+  font-size: 17px;
+  color: #808080;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight: 300;
+  line-height: 27px;
+}
 #possibilities .container .content-possibilities .description-course .benefit-course {
   display: flex;
   justify-content: space-between;
@@ -574,10 +626,10 @@ h4 {
   list-style: none;
 }
 #possibilities .container .content-possibilities .description-course .benefit-course ul li {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
-  color: #595959;
-  padding: 10px 0;
+  color: #808080;
+  padding: 13px 0;
 }
 #possibilities .container .content-possibilities .description-course .benefit-course ul li:before {
   content: "";
@@ -602,9 +654,11 @@ h4 {
 }
 #online-courses .container .content-online-courses {
   padding: 0 5%;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 #online-courses .container .content-online-courses .title-online-courses .text-title p.reduce {
-  width: 80%;
+  width: 65%;
 }
 #online-courses .container .content-online-courses .content-card-online-courses {
   display: flex;
@@ -666,28 +720,37 @@ h4 {
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .description-text p {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 26px;
   font-weight: 400;
   color: #808080;
+}
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span {
   text-transform: uppercase;
   color: #b9b9b9;
-  font-weight: 600;
+  font-weight: 700;
   vertical-align: middle;
-  font-size: 11px;
+  font-size: 12px;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:hover {
   color: #045d8c;
   cursor: pointer;
+}
+#online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:first-child {
+  font-weight: 400;
+  font-size: 14px;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:first-child:before {
   content: "";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   color: #b9b9b9;
-  vertical-align: middle;
   padding-right: 5px;
+  font-size: 12px;
 }
 #online-courses .container .content-online-courses .content-card-online-courses .card-online-courses .content-card-online .text-card .tag-text span:last-child:before {
   content: "";
@@ -757,7 +820,7 @@ h4 {
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td {
   border: 1px solid #efefef;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   color: grey;
   text-align: center;
@@ -768,7 +831,7 @@ h4 {
   padding: 10px 10px 10px 25px;
   text-align: left;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   height: 60px;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td button {
@@ -794,7 +857,7 @@ h4 {
   background-color: #f7fdff;
 }
 #pricing .container .content-pricing .table-pricing .content-table-pricing table tbody tr td.button button {
-  padding: 10px 30px;
+  padding: 15px 30px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -811,7 +874,7 @@ h4 {
   width: 200px;
 }
 #partners .container .content-partners .img-partners img:hover {
-  width: 205px;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -820,6 +883,8 @@ footer #footer .container.background {
 }
 footer #footer .container .content-footer {
   padding: 120px 5% 0px 70px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 footer #footer .container .content-footer .menu-footer {
   color: #ffffff;
@@ -840,7 +905,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
-footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li img {
+footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li a img {
   width: 120px;
   padding-bottom: 30px;
 }
@@ -852,6 +917,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   font-size: 15px;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
+  color: #cecece;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(1) {
   margin-bottom: 25px;
@@ -873,7 +939,6 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(2):hover {
   color: #045d8c;
-  cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3) {
   font-size: 13px;
@@ -891,13 +956,12 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3):hover {
   color: #045d8c;
-  cursor: pointer;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType {
   font-size: 15px;
   color: #cecece;
   font-family: "Merriweather", serif;
-  font-size: 700;
+  font-weight: 700;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetSecondType:hover {
   color: #045d8c;

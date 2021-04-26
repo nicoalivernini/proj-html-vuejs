@@ -63,8 +63,10 @@
       <div class="container">
         <div class="content-courses">
           <div class="card-courses" v-for="(course, i) in courses">
-            <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="">
-            <h3>{{ course.title }}</h3>
+            <div class="content-card-courses">
+              <img :src= "coursesImgBase + ((i)+1) + '.png'" alt="Course">
+              <h3>{{ course.title }}</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -74,13 +76,13 @@
         <div class="content-tutoring">
           <div class="text-tutoring">
             <h4>The Trusted Name <br> for In-Home-Tutoring</h4>
-            <p class="subtitle">Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin,
+            <p class="subtitle">Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin,
                lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
                odio sit amet nibcursus a sit amet mauris.</p>
-            <p class="more">Learn more</p>
+            <span class="more">Learn more</span>
           </div>
           <div class="img-tutoring mt-30">
-            <img src="assets/img/h5-img-1.jpg" alt="">
+            <img src="assets/img/h5-img-1.jpg" alt="Young People">
           </div>
         </div>
       </div>
@@ -92,8 +94,8 @@
             <img class="mt-50" src="assets/img/h5-img-2.jpg" alt="Immagine ragazzi con le mani sul mondo">
           </div>
           <div class="text-world">
-            <h4>Empowering Children to Reach Their Potential</h4>
-            <p class="subtitle">Lorem Ipns gravide nibh vel velit auctor aliquetnean sollicitudin,
+            <h4>Empowering <br> Children to Reach Their Potential</h4>
+            <p class="subtitle">Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin,
                lorem quis bibendum auci elit consequat ipsutis sem nibh id elited
                odio sit amet nibcursus a sit amet mauris.</p>
             <div class="data-world">
@@ -109,9 +111,9 @@
     <section id="review">
       <div class="container fluid background">
         <div class="content-review">
-          <div class="card-review ptb-150">
+          <div class="card-review ptb-140-100">
             <div class="img-card">
-              <img :src="reviewImgBase + `${review[index].img}` + '.png'" alt="">
+              <img :src="reviewImgBase + `${review[index].img}` + '.png'" alt="Image Earth White">
             </div>
             <div class="text-card txt-center">
               <p class="ptb-30">{{ review[index].description }}</p>
@@ -125,7 +127,7 @@
         </div>
       </div>
     </section>
-    <section id="possibilities" class="mt-120">
+    <section id="possibilities" class="mtb-120">
       <div class="container">
         <div class="content-possibilities">
           <div class="course-possibilities">
@@ -135,29 +137,29 @@
               </ul>
             </div>
           </div>
-          <div class="description-course ml-70">
+          <div class="description-course ml-70 mt-20">
             <div class="content-description">
               <h4>{{ possibilities[indexPossibilities].title }}</h4>
-              <p class="subtitle">{{ possibilities[indexPossibilities].description }}</p>
+              <p class="subtitle-possibilities">{{ possibilities[indexPossibilities].description }}</p>
             </div>
-            <div class="benefit-course">
+            <div class="benefit-course mt-20">
               <ul>
                 <li v-for="benefit in possibilities[indexPossibilities].benefit">{{ benefit.title }}</li>
               </ul>
               <div class="img-benefit">
-                <img :src="'assets/img/h12-tabs-icon-' + `${indexPossibilities + 1}` + '.png'" alt="">
+                <img :src="'assets/img/h12-tabs-icon-' + `${indexPossibilities + 1}` + '.png'" alt="Icon Possibilities">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="online-courses" class="mt-120">
+    <section id="online-courses">
       <div class="container fluid background ">
         <div class="content-online-courses">
-          <div class="title-online-courses txt-center">
+          <div class="title-online-courses txt-center pt-100">
             <div class="text-title">
-              <h4>Popular Online Courses</h4>
+              <h4 class="big">Popular Online Courses</h4>
               <p class="subtitle reduce">Lorem ipsum gravida nibh vel velit auctor aliquetnean
                 sollicitudin, lorem quis bibendum auci elit consequat ipsutis
                 sem nibh id elit
@@ -168,13 +170,13 @@
             <div class="card-online-courses" v-for="course in onlineCourses">
               <div class="content-card-online">
                 <div class="img-card">
-                  <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="">
+                  <img :src="onlineCoursesImgBase + `${course.img}` + '-f-img.jpg'" alt="Online Course">
                 </div>
                 <div class="text-card">
                   <div class="header-text">
                     <div class="title-text">
                       <h6>{{ course.title }}</h6>
-                      <p class="ptb-10">{{ course.author }}</p>
+                      <p class="ptb-5-10">{{ course.author }}</p>
                     </div>
                     <div class="price-text">
                       <span>{{ course.price }}</span>
@@ -183,7 +185,7 @@
                   <div class="description-text mt-15">
                     <p>{{ course.description }}</p>
                   </div>
-                  <div class="tag-text ptb-15">
+                  <div class="tag-text pt-20">
                     <span>{{ course.people }}</span>
                     <span>{{ course.tag }}</span>
                   </div>
@@ -192,7 +194,7 @@
             </div>
           </div>
           <div class="icon-card">
-            <div class="content-icon-card txt-center ptb-45">
+            <div class="content-icon-card txt-center ptb-45-100">
               <i class="fas fa-circle plr-7" v-for="course in onlineCourses"></i>
             </div>
           </div>
@@ -203,7 +205,7 @@
       <div class="container background fluid pb-120">
         <div class="content-pricing">
           <div class="text-pricing txt-center">
-            <h4>Pricing Plans</h4>
+            <h4 class="big">Pricing Plans</h4>
             <p class="subtitle">Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendu, auci</p>
           </div>
           <div class="table-pricing mt-70">
@@ -212,7 +214,7 @@
                 <thead>
                   <tr>
                     <th rowspan="3" v-for="date in dateTable">
-                      <img :src="dataTableImgBase + `${date.img}` + '.png'" alt="">
+                      <img v-if="date.img" :src="dataTableImgBase + `${date.img}` + '.png'" alt="Icon Table">
                       <h5>{{ date.title }}</h5>
                       <p>{{ date.cost }}</p>
                     </th>
@@ -257,7 +259,7 @@
       <div class="container">
         <div class="content-partners">
           <div class="img-partners" v-for="partner in partners">
-            <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="">
+            <img :src="partnersImgBase + `${partner.img}` + '.png'" alt="Partner">
           </div>
         </div>
       </div>
@@ -271,7 +273,7 @@
                 <div class="column-menu">
                   <div class="content-column-menu">
                     <ul>
-                      <li><img src="assets/img/logo-light.png" alt="">
+                      <li><a href="#"><img src="assets/img/logo-light.png" alt="Logo iAcademy"></a>
                         <ul>
                           <li class="widgetFirst" v-for="(data, i) in widgetFirst">{{ data.description }}</li>
                         </ul>
@@ -282,7 +284,7 @@
                 <div class="column-menu">
                   <div class="content-column-menu">
                     <ul>
-                      <li>{{ widgetSecond[0].title}}
+                      <li>{{ widgetSecond[0].title }}
                         <ul v-for="data in widgetSecond">
                           <li class="widgetSecondType" v-if="data.type">{{ data.type }}</li>
                           <li class="widgetSecondAuthor" v-if="data.author">{{ data.author }}</li>
@@ -294,7 +296,7 @@
                 <div class="column-menu">
                   <div class="content-column-menu">
                     <ul>
-                      <li>{{ widgetThird[0].title}}
+                      <li>{{ widgetThird[0].title }}
                         <ul>
                           <li class="widgetThird" v-if="data.menu" v-for="(data, i) in widgetThird"><a :href=`${data.link}`>{{ data.menu }}</a></li>
                         </ul>
@@ -305,9 +307,9 @@
                 <div class="column-menu">
                   <div class="content-column-menu">
                     <ul>
-                      <li>{{ widgetFourth[0].title}}
+                      <li>{{ widgetFourth[0].title }}
                         <ul>
-                          <li class="widgetFourth"><img :src="widgetFourthImgBase" alt=""></li>
+                          <li class="widgetFourth"><img :src="widgetFourthImgBase" alt="Image Earth"></li>
                         </ul>
                       </li>
                     </ul>
@@ -339,12 +341,12 @@
             </div>
             <div class="content-shopping-bag">
               <a href="">
-                <img src="assets/svg/svg-2.svg" alt="">
+                <img src="assets/svg/svg-2.svg" alt="Icona shopping bag">
               </a>
             </div>
             <div class="content-circle-logo">
               <a href="">
-                <img src="assets/svg/svg-3.svg" alt="">
+                <img src="assets/svg/svg-3.svg" alt="Icona Circle">
               </a>
             </div>
           </div>

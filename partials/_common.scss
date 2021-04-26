@@ -1,9 +1,11 @@
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1400px;
   &.fluid {
       width: 100%;
       margin: 0 auto;
+      max-width: none;
     }
 }
 
@@ -12,22 +14,24 @@
 }
 
 .subtitle {
-  // width: 80%;
   margin: 0 auto;
   font-size: 17px;
   color: $text-gray;
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 h4 {
   font-family: 'Merriweather', serif;
   font-size: 38px;
   color: $title-gray;
-  font-weight: 500;
-  line-height: 45px;
+  font-weight: 600;
+  line-height: 50px;
+  &.big {
+    font-size: 43px;
+  }
 }
 
 //Padding
@@ -88,6 +92,21 @@ h4 {
 .ptb-150 {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.ptb-5-10 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.ptb-45-100 {
+  padding-top: 45px;
+  padding-bottom: 100px;
+}
+
+.ptb-140-100{
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 //Padding left e right
@@ -176,6 +195,10 @@ h4 {
 }
 
 //Padding top
+.pt-15 {
+  padding-top: 15px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -194,6 +217,10 @@ h4 {
 
 .pt-60 {
   padding-top: 60px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 //Margin left-right
@@ -227,6 +254,10 @@ h4 {
 //Margin top
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-30 {

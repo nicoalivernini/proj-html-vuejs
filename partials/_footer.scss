@@ -6,6 +6,8 @@ footer {
       }
       .content-footer {
         padding: 120px 5% 0px 70px;
+        margin: 0 auto;
+        max-width: 1400px;
         .menu-footer {
           color: $white;
           padding-bottom: 70px;
@@ -21,9 +23,11 @@ footer {
                     font-size: 22px;
                     font-family: 'Merriweather', serif;
                     font-weight: 700;
-                    img {
-                      width: 120px;
-                      padding-bottom: 30px;
+                    a {
+                      img {
+                        width: 120px;
+                        padding-bottom: 30px;
+                      }
                     }
                     ul {
                       &:first-child {
@@ -35,6 +39,7 @@ footer {
                           font-size: 15px;
                           font-weight: 300;
                           font-family: 'Open Sans', sans-serif;
+                          color: $widgetSecond-title;
                           &:nth-child(1) {
                             margin-bottom: 25px;
                             line-height: 25px;
@@ -49,7 +54,6 @@ footer {
                             }
                             &:hover{
                               color: $celeste-button;
-                              cursor: pointer;
                             }
                           }
                           &:nth-child(3) {
@@ -62,7 +66,6 @@ footer {
                             }
                             &:hover{
                               color: $celeste-button;
-                              cursor: pointer;
                             }
                           }
                         }
@@ -70,7 +73,7 @@ footer {
                           font-size: 15px;
                           color: $widgetSecond-title;
                           font-family: 'Merriweather', serif;
-                          font-size: 700;
+                          font-weight: 700;
                           &:hover {
                             color: $celeste-button;
                             cursor: pointer;

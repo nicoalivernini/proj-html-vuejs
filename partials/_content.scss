@@ -4,22 +4,24 @@
       @include flex-space-between-center;
       .card-courses {
         width: 15%;
-        background-color: #f2f8fc;
-        @include flex-column-center-center;
-        padding: 40px;
-        img {
-          width: 80px;
-          &:hover {
-            padding-bottom: 10px;
-            cursor: pointer;
+        .content-card-courses {
+          @include flex-column-center-center;
+          background-color: #f2f8fc;
+          padding: 40px;
+          img {
+            width: 65px;
+            &:hover {
+              transform: translateY(-10px);
+              cursor: pointer;
+            }
           }
-        }
-        h3 {
-          color: $title-gray;
-          padding-top: 20px;
-          font-family: 'Merriweather', serif;
-          font-size: 15px;
-          font-weight: 700;
+          h3 {
+            color: $title-gray;
+            padding-top: 20px;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -30,14 +32,15 @@
     .content-tutoring {
       .text-tutoring {
         h4 {
-
         }
         p {
-
+        }
+        span {
           &.more {
             text-transform: uppercase;
             color: $celeste-button;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 14px;
             &:hover {
               text-decoration: underline;
               cursor: pointer;
@@ -67,10 +70,8 @@
       .text-world {
         width: 45%;
         h4 {
-
         }
         p {
-
         }
         .data-world {
           @include flex-start-center;
@@ -79,11 +80,12 @@
               color: $celeste-button;
               font-family: 'Merriweather', serif;
               padding-top: 10px;
+              font-weight: 600;
+              font-size: 18px;
               &:first-child {
                 font-size: 45px;
                 font-weight: 600;
               }
-
             }
           }
         }
@@ -106,7 +108,6 @@
         @include flex-column-center-center;
         .img-card {
           img {
-
           }
         }
         .text-card {
@@ -158,7 +159,7 @@
           ul {
             list-style: none;
             li {
-              padding: 25px 10px 25px 20px;
+              padding: 27px 10px 27px 20px;
               border: 1px solid $border-course-possibilities;
               font-family: 'Merriweather', serif;
               color: $text-course-possibilities;
@@ -181,10 +182,17 @@
         width: 60%;
         .content-description {
           h4 {
-
           }
           p {
-
+            &.subtitle-possibilities {
+              margin: 0 auto;
+              font-size: 17px;
+              color: $subtitle-possibilities;
+              padding-top: 25px;
+              padding-bottom: 25px;
+              font-weight: 300;
+              line-height: 27px;
+            }
           }
         }
         .benefit-course {
@@ -192,10 +200,10 @@
           ul {
             list-style: none;
             li {
-              font-size: 18px;
+              font-size: 17px;
               font-weight: 300;
-              color: $text-gray;
-              padding: 10px 0;
+              color: $subtitle-possibilities;
+              padding: 13px 0;
               &:before{
                 @include done;
               }
@@ -222,14 +230,15 @@
     }
     .content-online-courses {
       padding: 0 5%;
+      margin: 0 auto;
+      max-width: 1400px;
       .title-online-courses {
         .text-title {
           h4 {
-
           }
           p {
             &.reduce {
-              width: 80%;
+              width: 65%;
             }
           }
         }
@@ -301,21 +310,26 @@
               .description-text {
                 p {
                   font-size: 15px;
-                  line-height: 25px;
+                  line-height: 26px;
                   font-weight: 400;
                   color: #808080;
                 }
               }
               .tag-text {
+                @include flex-start-center;
                 span {
                   text-transform: uppercase;
                   color: $icon-color-courses;
-                  font-weight: 600;
+                  font-weight: 700;
                   vertical-align: middle;
-                  font-size: 11px;
+                  font-size: 12px;
                   &:hover {
                     color: $celeste-button;
                     cursor: pointer;
+                  }
+                  &:first-child {
+                    font-weight: 400;
+                    font-size: 14px;
                   }
                   &:first-child:before {
                     @include user;
@@ -356,10 +370,8 @@
       padding: 0 5%;
       .text-pricing {
         h4 {
-
         }
         p {
-
         }
       }
       .table-pricing {
@@ -389,9 +401,6 @@
                       padding-top: 100px;
                     }
                   }
-                  // &:nth-child(3) {
-                  //   border-top: 4px solid $celeste-button;
-                  // }
                   img{
                     padding-bottom: 10px;
                   }
@@ -413,7 +422,7 @@
               tr {
                 td {
                   border: 1px solid $border-gray-table;
-                  font-weight: 400;
+                  font-weight: 300;
                   font-size: 20px;
                   color: grey;
                   text-align: center;
@@ -423,7 +432,7 @@
                     padding: 10px 10px 10px 25px;
                     text-align: left;
                     font-size: 16px;
-                    font-weight: 500;
+                    font-weight: 600;
                     height: 60px;
                   }
                   button {
@@ -448,7 +457,7 @@
                     padding: 20px 0;
                     background-color: $celeste-back-table;
                     button {
-                      padding: 10px 30px;
+                      padding: 15px 30px;
                       font-weight: 600;
                       letter-spacing: 1px;
                     }
@@ -482,7 +491,7 @@
         img {
           width: 200px;
           &:hover {
-            width: 205px;
+            opacity: 0.5;
             cursor: pointer;
           }
         }

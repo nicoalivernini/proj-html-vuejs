@@ -87,17 +87,17 @@ var app = new Vue({
     review: [{
       author: 'Joan Collins',
       type: 'Student',
-      description: 'Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.',
+      description: '"Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus."',
       img: '2'
     }, {
       author: 'Joe Kennedy',
       type: 'Architect',
-      description: 'Nisi elit consequat ipsutis sem nibh id elit. Morbi accumsan ipsum velit. Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor. Nam nec tellus. Duis sed odio sit amet nivulputate cursus a sit amet mauris. ',
+      description: '"Nisi elit consequat ipsutis sem nibh id elit. Morbi accumsan ipsum velit. Mroin gravida nibh vel veliauctor aliquenean aollicitudin, lorem quis bbendum auctor. Nam nec tellus. Duis sed odio sit amet nivulputate cursus a sit amet mauris."',
       img: '3'
     }, {
       author: 'Catherine Fletcher',
       type: 'Psychologist',
-      description: 'Lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.Mroin gravida nibh vel veliauctor aliquenean aollicitudin.',
+      description: '"Lorem quis bbendum auctor, nisi elit consequat ipsutis sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.Mroin gravida nibh vel veliauctor aliquenean aollicitudin."',
       img: '5'
     }],
     indexPossibilities: 0,
@@ -106,9 +106,9 @@ var app = new Vue({
       title: 'Learning Possibilities',
       description: 'Lorem Ipns gravida nibh vel velit auctor aliquetnean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elited odio sit amet nibcursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.',
       benefit: [{
-        title: 'We enrich lives through learning'
+        title: 'We enrich lives through learning.'
       }, {
-        title: 'Maximing potentual through individual attention.'
+        title: 'Maximizing potential through individual attention.'
       }, {
         title: 'The trusted name for specialized training.'
       }, {
@@ -280,11 +280,11 @@ var app = new Vue({
     //Chiusura Date Table
     partnersImgBase: 'assets/img/h5-client-',
     partners: [{
+      img: '5'
+    }, {
       img: '1'
     }, {
       img: '2'
-    }, {
-      img: '3'
     }, {
       img: '4'
     }],
@@ -294,26 +294,33 @@ var app = new Vue({
       // img: '',
       description: 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home'
     }, {
-      description: '1-677-124-44227'
+      description: '1-677-124-44227',
+      link: 'tel:#'
     }, {
-      description: 'Mon - Sat 8.00 - 18.00'
+      description: 'Mon - Sat 8.00 - 18.00',
+      link: '#'
     }],
     //Chiusura Widget First
     widgetSecond: [{
-      title: 'Popular Courses'
+      title: 'Popular Courses',
+      link: '#'
     }, {
       type: 'Business English',
-      author: 'Preston Marshall'
+      author: 'Preston Marshall',
+      link: '#'
     }, {
       type: 'Social Computing',
-      author: 'David Sanders'
+      author: 'David Sanders',
+      link: '#'
     }, {
       type: 'Learn Spanish',
-      author: 'Jennie King'
+      author: 'Jennie King',
+      link: '#'
     }],
     //Chiusura Widget Second
     widgetThird: [{
-      title: 'Support'
+      title: 'Support',
+      link: '#'
     }, {
       menu: 'User dashboard',
       link: '#'
@@ -333,7 +340,8 @@ var app = new Vue({
     //Chiusura Widget Third
     widgetFourthImgBase: 'assets/img/footer-img-1.png',
     widgetFourth: [{
-      title: 'Flexible Learning'
+      title: 'Flexible Learning',
+      link: '#'
     }],
     // Chiusura Widget Fourth
     widgetCopyRight: [{
@@ -385,9 +393,6 @@ var app = new Vue({
     active: function active(index) {
       this.index = index;
       console.log(index);
-    },
-    activeReview: function activeReview(index) {
-      this.index = index;
     },
     selezione: function selezione(index) {
       this.indexPossibilities = index;
