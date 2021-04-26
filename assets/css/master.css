@@ -949,6 +949,7 @@ footer #footer .container .content-footer .menu-footer .content-footer-menu .col
   padding-right: 10px;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(2):hover {
+  cursor: pointer;
   color: #045d8c;
 }
 footer #footer .container .content-footer .menu-footer .content-footer-menu .column-menu .content-column-menu ul li ul li.widgetFirst:nth-child(3) {

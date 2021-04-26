@@ -53,6 +53,7 @@ footer {
                               @include telephone;
                             }
                             &:hover{
+                              cursor: pointer;
                               color: $celeste-button;
                             }
                           }
